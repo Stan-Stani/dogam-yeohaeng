@@ -1,0 +1,356 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>도감 여행</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jua&family=Gowun+Dodum&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: a trainer's field dex. A route of six areas (태초마을 → 회색시티) on a pale map; each area opens short original sentences that use its words
+   where new words glow. Catching a word files it in the 도감; due words come back as wild encounters in the 풀숲.
+   Palette from the route itself: grass, path, sky — with a vermilion catch accent. */
+:root{
+  --bg:#EEF3EC; --card:#FFFFFF; --ink:#1E2A26; --muted:#5E6E67; --line:#D3DED7;
+  --grass:#5DA35A; --grass-2:#3F7E45; --path:#D9C08A; --sky:#8FC7E8; --catch:#E2533B; --catch-ink:#FFFFFF; --glow:#FFE27A; --known:#B9C7BF;
+  --display:"Jua","Apple SD Gothic Neo",sans-serif; --body:"Gowun Dodum","Apple SD Gothic Neo",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#121A17;--card:#1B2520;--ink:#E8F0EB;--muted:#9DB0A6;--line:#2C3A33;--grass:#6DB86A;--grass-2:#4E9A55;--path:#8C7A52;--sky:#3E6E8E;--glow:#7A6722;--known:#4A5A52}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#121A17;--card:#1B2520;--ink:#E8F0EB;--muted:#9DB0A6;--line:#2C3A33;--grass:#6DB86A;--grass-2:#4E9A55;--path:#8C7A52;--sky:#3E6E8E;--glow:#7A6722;--known:#4A5A52}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);margin:0;-webkit-tap-highlight-color:transparent}
+button{font:inherit;color:inherit}
+button:focus-visible{outline:3px solid var(--catch);outline-offset:2px}
+.app{max-width:520px;margin:0 auto;padding:0 16px;padding-block:12px 96px;display:flex;flex-direction:column;gap:14px}
+header{display:flex;justify-content:space-between;align-items:center;gap:10px}
+h1{font-family:var(--display);font-weight:400;font-size:1.7rem;margin:0;letter-spacing:.02em}
+.stats{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}
+.chip{font-family:var(--mono);font-size:.75rem;padding:4px 8px;border-radius:999px;background:var(--card);border:1px solid var(--line);font-variant-numeric:tabular-nums;white-space:nowrap}
+.chip b{font-weight:500;color:var(--catch)}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:1px solid var(--line);padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;gap:8px;z-index:5}
+nav button{flex:1;max-width:160px;border:0;background:transparent;border-radius:10px;padding:8px 4px;font-family:var(--display);font-size:1.05rem;color:var(--muted);cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px}
+nav button[aria-current="page"]{background:var(--bg);color:var(--ink)}
+nav .n{font-family:var(--mono);font-size:.68rem;color:var(--catch)}
+h2{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
+.sub{color:var(--muted);font-size:.9rem;margin:0;line-height:1.5}
+
+/* map */
+.route{display:flex;flex-direction:column;gap:0;position:relative}
+.stop{display:flex;gap:12px;align-items:stretch;cursor:pointer;background:none;border:0;padding:0;text-align:left;width:100%}
+.stop[disabled]{cursor:default}
+.track{flex:none;width:42px;display:flex;flex-direction:column;align-items:center}
+.track .seg{flex:1;width:6px;background:repeating-linear-gradient(var(--path) 0 8px,transparent 8px 12px)}
+.track .seg.first{visibility:hidden}
+.node{width:36px;height:36px;border-radius:50%;background:var(--card);border:3px solid var(--grass);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-size:1rem}
+.stop.here .node{background:var(--grass);color:#fff;box-shadow:0 0 0 5px color-mix(in srgb,var(--grass) 25%,transparent)}
+.stop[disabled] .node{border-color:var(--line);color:var(--muted)}
+.stop.badge .node{background:var(--path);border-color:var(--grass-2)}
+.info{flex:1;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:6px 0;display:flex;flex-direction:column;gap:6px}
+.info .t{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.info .ko{font-family:var(--display);font-size:1.2rem}
+.info .en{font-family:var(--mono);font-size:.68rem;color:var(--muted);letter-spacing:.06em}
+.bar{height:8px;border-radius:4px;background:var(--line);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .c{background:var(--grass)} .bar .m{background:var(--grass-2)}
+.info .nums{font-family:var(--mono);font-size:.72rem;color:var(--muted);font-variant-numeric:tabular-nums}
+
+/* scene */
+.scene{display:flex;flex-direction:column;gap:10px}
+.line{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font-size:1.12rem;line-height:1.75;word-break:keep-all}
+.w{cursor:pointer;border-radius:4px}
+.w.new{background:var(--glow);box-shadow:0 0 0 2px var(--glow);animation:pulse 2.2s ease-in-out infinite}
+.w.got{text-decoration:underline 2px var(--grass);text-underline-offset:4px}
+@keyframes pulse{50%{box-shadow:0 0 0 4px var(--glow)}}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:2px solid var(--ink);background:transparent;border-radius:10px;padding:9px 14px;font-family:var(--display);font-size:1.05rem;cursor:pointer}
+.btn.go{background:var(--catch);border-color:var(--catch);color:var(--catch-ink)}
+.btn.quiet{border-color:var(--line);color:var(--muted)}
+.btn[disabled]{opacity:.45;cursor:default}
+
+/* sheets: catch card, battle, word, wild */
+.sheet-wrap{position:fixed;inset:0;background:rgba(10,20,15,.55);display:flex;align-items:flex-end;justify-content:center;z-index:10}
+.sheet{background:var(--card);width:100%;max-width:520px;border-radius:18px 18px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:12px;max-height:88vh;overflow:auto;box-sizing:border-box}
+.big{font-family:var(--display);font-size:2.4rem;line-height:1.1;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.big .pos{font-family:var(--mono);font-size:.72rem;color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.def{font-size:1.08rem;line-height:1.55}
+.en{font-family:var(--mono);font-size:.8rem;color:var(--muted)}
+.q{width:30px;height:30px;border-radius:50%;border:2px solid var(--muted);background:transparent;color:var(--muted);font-family:var(--mono);cursor:pointer;flex:none}
+.ex{background:var(--bg);border-radius:10px;padding:10px 12px;line-height:1.7}
+.ex b{background:var(--glow);font-weight:400;border-radius:3px;padding:0 2px}
+.hj{display:flex;flex-direction:column;gap:6px}
+.hj .ch{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.hj .c{font-size:1.5rem;font-family:serif}
+.fam{display:flex;gap:6px;flex-wrap:wrap}
+.fam span{font-size:.88rem;border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+.label{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--muted)}
+.opts{display:flex;flex-direction:column;gap:8px}
+.opt{text-align:left;border:2px solid var(--line);background:var(--card);border-radius:10px;padding:10px 14px;font-size:1.1rem;cursor:pointer}
+.opt.right{border-color:var(--grass);background:color-mix(in srgb,var(--grass) 18%,var(--card))}
+.opt.wrong{border-color:var(--catch);background:color-mix(in srgb,var(--catch) 14%,var(--card))}
+.mon{display:flex;align-items:center;gap:12px}
+.mon canvas{width:64px;height:64px;image-rendering:pixelated;flex:none}
+.hp{flex:1;height:10px;border-radius:5px;background:var(--line);overflow:hidden}
+.hp i{display:block;height:100%;background:var(--grass);transition:width .4s}
+
+/* dex */
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font-family:var(--display);cursor:pointer}
+.tab[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 6px;display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;min-width:0}
+.tile .k{font-size:1rem;word-break:keep-all;text-align:center}
+.tile.unseen{border-style:dashed;cursor:default}
+.tile.unseen .k{color:var(--known)}
+.pips{display:flex;gap:2px}
+.pips i{width:6px;height:6px;border-radius:1px;background:var(--line)}
+.pips i.on{background:var(--grass)}
+.pips.known i{background:var(--known)}
+.gloss{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:50%;transform:translateX(-50%);width:min(480px,calc(100% - 32px));box-sizing:border-box;background:var(--ink);color:var(--bg);border-radius:12px;padding:10px 48px 10px 14px;z-index:20;line-height:1.5;display:flex;flex-direction:column;gap:3px}
+.gloss b{font-family:var(--display);font-weight:400;font-size:1.1rem;margin-right:6px}
+.gloss .en{color:var(--known)}
+.gloss .q{position:absolute;right:10px;top:8px;border-color:var(--bg);color:var(--bg)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:999px;font-family:var(--display);z-index:30;white-space:nowrap}
+.empty{color:var(--muted);text-align:center;padding:24px 0;line-height:1.7}
+@media (prefers-reduced-motion: reduce){.w.new{animation:none}}
+</style></head><body>
+<div class="app">
+  <header><h1>도감 여행</h1><div class="stats"><span class="chip" id="todayChip"></span><span class="chip" id="dexChip"></span></div></header>
+  <main id="view"></main>
+</div>
+<nav>
+  <button data-v="map" aria-current="page">지도</button>
+  <button data-v="wild">풀숲<span class="n" id="dueN"></span></button>
+  <button data-v="dex">도감</button>
+</nav>
+<div class="gloss" id="gloss" hidden></div>
+<div class="toast" id="toast" hidden></div>
+<script>window.DATA=__DATA__;window.LEX=__LEX__;</script>
+<script>
+const D=DATA,$=id=>document.getElementById(id);
+const CAP=20, GUIDE=30, GAP=[60e3,10*60e3,24*3600e3,3*24*3600e3,7*24*3600e3,16*24*3600e3,35*24*3600e3];
+const W=Object.fromEntries(D.words.map(w=>[w.w,w]));
+const esc=x=>String(x).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const today=()=>new Date().toISOString().slice(0,10);
+
+/* ---------- save ---------- */
+let S={caught:{},day:'',newToday:0,v:1};
+try{Object.assign(S,JSON.parse(localStorage.getItem('dogam-v1')||'{}'))}catch(e){}
+function save(){try{localStorage.setItem('dogam-v1',JSON.stringify(S))}catch(e){}}
+if(S.day!==today()){S.day=today();S.newToday=0;save()}
+const caught=w=>!!S.caught[w];
+const level=w=>S.caught[w]?S.caught[w].b:-1;
+const reviewable=w=>W[w]&&W[w].cat!=='mon';
+const isDue=w=>caught(w)&&reviewable(w)&&!S.caught[w].known&&S.caught[w].due<=Date.now();
+const dueList=()=>Object.keys(S.caught).filter(isDue).sort((a,b)=>S.caught[a].due-S.caught[b].due);
+
+/* ---------- progress: an area opens when the previous one's 길잡이 words are all caught ---------- */
+const guide=ai=>D.words.filter(w=>w.area===ai&&w.cat!=='mon'&&w.cat!=='root').sort((a,b)=>b.f-a.f).slice(0,GUIDE).map(w=>w.w);
+const unlocked=ai=>ai===0||guide(ai-1).every(caught);
+const reached=()=>{let n=0;while(n+1<D.areas.length&&unlocked(n+1))n++;return n};
+const hasBadge=ai=>guide(ai).every(w=>caught(w)&&(S.caught[w].known||S.caught[w].b>=3));
+const linesFor=ai=>D.lines.map((l,i)=>[l,i]).filter(([l])=>l.a===ai);
+const exLines=(w,max=reached())=>(W[w]?W[w].ex:[]).filter(i=>D.lines[i]&&D.lines[i].a<=max);
+
+/* ---------- dictionary ---------- */
+function defOf(w){const L=LEX.defs[w];if(L)return {k:L.k,e:L.e||W[w]?.g||''};return W[w]?{k:null,e:W[w].g}:null}
+function lookup(eoj){
+  let ls=D.tap[eoj];
+  if(!ls)for(let n=eoj.length;n>0&&!ls;n--){const p=eoj.slice(0,n);if(D.tap[p])ls=D.tap[p];else if(W[p]||LEX.defs[p])ls=[p];else if(LEX.defs[p+'다'])ls=[p+'다']}
+  return (ls||[]).map(l=>[l,defOf(l)]).filter(([,d])=>d);
+}
+function popGloss(rows){
+  const g=$('gloss');if(!rows.length){toast('사전에 없는 말이에요.');g.hidden=true;return}
+  g.innerHTML=rows.map(([h,d])=>`<div><b>${esc(h)}</b>${d.k?esc(d.k):'<span class="en">…</span>'}<span class="en" hidden> · ${esc(d.e)}</span></div>`).join('')+'<button class="q" aria-label="영어로 보기">?</button>';
+  g.hidden=false;g.querySelector('.q').onclick=e=>{e.stopPropagation();g.querySelectorAll('.en[hidden],.en.shown').forEach(x=>{x.hidden=!x.hidden;x.classList.add('shown')})};
+  clearTimeout(popGloss.t);popGloss.t=setTimeout(()=>g.hidden=true,7000);
+}
+$('gloss').onclick=e=>{if(!e.target.closest('.q'))$('gloss').hidden=true};
+let toastT;function toast(t){const el=$('toast');el.textContent=t;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>el.hidden=true,2200)}
+
+/* words in a line → spans: up to GLOW uncaught deck words glow (길잡이 first, then the most frequent),
+   caught ones are underlined, everything is tappable */
+const GLOW=3;
+function lineHTML(t,opts={}){
+  const deckOf=eoj=>{const ds=(D.tap[eoj]||[]).filter(l=>W[l]&&W[l].area<=reached());return ds.find(l=>!caught(l))||ds[0]};
+  const g=new Set(guide(reached())),rank=w=>(g.has(w)?1e6:0)+(W[w].f||0);
+  const glow=opts.glow===false?new Set():new Set([...new Set((t.match(/[가-힣]+/g)||[]).map(deckOf).filter(w=>w&&!caught(w)))]
+    .sort((a,b)=>rank(b)-rank(a)).slice(0,GLOW));
+  return esc(t).replace(/[가-힣]+/g,eoj=>{
+    const deck=deckOf(eoj);
+    const cls=deck?(caught(deck)?'got':(glow.delete(deck)?'new':'')):'';  // only a word's first occurrence glows
+    return `<span class="w ${cls}" data-e="${eoj}"${deck?` data-w="${esc(deck)}"`:''}>${eoj}</span>`});
+}
+document.addEventListener('click',e=>{
+  const s=e.target.closest('.w');if(!s||s.closest('.noTap'))return;
+  if(s.classList.contains('new')&&s.dataset.w){openCatch(s.dataset.w,s.closest('.line')?.dataset.li);return}
+  popGloss(lookup(s.dataset.e));
+});
+
+/* ---------- speech ---------- */
+let voice=null;function pickV(){voice=(speechSynthesis.getVoices()||[]).find(v=>/^ko/i.test(v.lang))||null}
+if('speechSynthesis' in window){pickV();speechSynthesis.onvoiceschanged=pickV}
+function say(t){if(!voice)return;try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='ko-KR';u.voice=voice;u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+
+/* ---------- little original pixel critters for battles (procedural, seeded by the word) ---------- */
+function critter(cv,seed,hue){
+  const g=cv.getContext('2d');cv.width=16;cv.height=16;g.clearRect(0,0,16,16);
+  let h=0;for(const ch of seed)h=(h*31+ch.charCodeAt(0))>>>0;const rnd=()=>((h=(h*1103515245+12345)>>>0)>>>8)/16777216;
+  const body=`hsl(${hue},55%,55%)`,dark=`hsl(${hue},55%,32%)`,ol='#1E2A26';
+  const m=[];for(let y=0;y<16;y++){m[y]=[];for(let x=0;x<8;x++){const dx=(7.5-x)/7.5,dy=(y-8.5)/7.5;m[y][x]=(dx*dx+dy*dy<0.85+rnd()*0.25&&y>2)?1:0}}
+  for(let y=0;y<16;y++)for(let x=0;x<8;x++)if(m[y][x]){const c=y>11?dark:body;g.fillStyle=c;g.fillRect(x,y,1,1);g.fillRect(15-x,y,1,1)}
+  for(let y=0;y<16;y++)for(let x=0;x<16;x++){const xi=x<8?x:15-x;if(!m[y][xi]&&((m[y-1]&&m[y-1][xi])||(m[y+1]&&m[y+1][xi])||(xi>0&&m[y][xi-1])||(xi<7&&m[y][xi+1]))){g.fillStyle=ol;g.fillRect(x,y,1,1)}}
+  g.fillStyle='#fff';g.fillRect(5,7,2,2);g.fillRect(9,7,2,2);g.fillStyle=ol;g.fillRect(6,8,1,1);g.fillRect(10,8,1,1);
+  if(rnd()>.5){g.fillStyle=dark;g.fillRect(4,3,2,2);g.fillRect(10,3,2,2)}
+}
+
+/* ---------- views ---------- */
+let view='map',area=0,sceneLines=[];
+function header(){
+  const n=Object.keys(S.caught).length,tot=D.words.filter(w=>w.area<=reached()).length;
+  $('todayChip').innerHTML=`오늘 <b>${S.newToday}</b>/${CAP}`;$('dexChip').textContent=`도감 ${n}/${tot}`;
+  const d=dueList().length;$('dueN').textContent=d?d:'';
+}
+function go(v,ai){view=v;if(ai!=null)area=ai;document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-current',b.dataset.v===v||(v==='scene'&&b.dataset.v==='map')?'page':'false'));render()}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>go(b.dataset.v));
+function render(){header();({map:viewMap,scene:viewScene,wild:viewWild,dex:viewDex})[view]();window.scrollTo(0,0)}
+
+function viewMap(){
+  const r=reached();
+  $('view').innerHTML=`<div class="route">${D.areas.map((a,i)=>{
+    const open=i<=r,ws=D.words.filter(w=>w.area===i),c=ws.filter(w=>caught(w.w)).length,m=ws.filter(w=>caught(w.w)&&(S.caught[w.w].known||S.caught[w.w].b>=3)).length;
+    const g=guide(i),gc=g.filter(caught).length;
+    return `<button class="stop${i===r?' here':''}${open&&hasBadge(i)?' badge':''}" data-i="${i}" ${open?'':'disabled'}>
+      <span class="track"><span class="seg${i===0?' first':''}"></span><span class="node">${open?(hasBadge(i)?'★':i+1):'?'}</span><span class="seg${i===D.areas.length-1?' first':''}"></span></span>
+      <span class="info">${open?`<span class="t"><span class="ko">${a.ko}</span><span class="en">${a.en.toUpperCase()}</span></span>
+        <span class="bar"><i class="m" style="width:${ws.length?m/ws.length*100:0}%"></i><i class="c" style="width:${ws.length?(c-m)/ws.length*100:0}%"></i></span>
+        <span class="nums">길잡이 ${gc}/${g.length} · 잡은 단어 ${c}/${ws.length}</span>`:`<span class="t"><span class="ko">???</span></span><span class="nums">앞 마을의 길잡이 단어를 다 잡으면 열려요</span>`}</span></button>`}).join('')}</div>`;
+  $('view').querySelectorAll('.stop:not([disabled])').forEach(b=>b.onclick=()=>{sceneLines=[];go('scene',+b.dataset.i)});
+}
+
+function pickScene(ai){
+  const g=new Set(guide(ai).filter(w=>!caught(w)));
+  const score=([l,i])=>{const ws=[...new Set((l.t.match(/[가-힣]+/g)||[]).flatMap(e=>D.tap[e]||[]))].filter(w=>W[w]&&W[w].area<=ai&&!caught(w));
+    return ws.length?ws.filter(w=>g.has(w)).length*3+ws.length+Math.random():-1};
+  return linesFor(ai).map(x=>[x,score(x)]).filter(([,s])=>s>0).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([[,i]])=>i);
+}
+function viewScene(){
+  const a=D.areas[area];if(!sceneLines.length)sceneLines=pickScene(area);
+  const left=guide(area).filter(w=>!caught(w)).length;
+  $('view').innerHTML=`<div class="scene"><div><h2>${a.ko}</h2><p class="sub">${left?`길잡이 단어가 ${left}개 남았어요.`:'길잡이 단어를 다 잡았어요!'} 빛나는 단어를 눌러 잡아요.</p></div>
+    ${sceneLines.length?sceneLines.map(i=>`<div class="line" data-li="${i}">${lineHTML(D.lines[i].t)}</div>`).join(''):'<p class="empty">이 마을에서 새 단어가 있는 문장을 다 봤어요.</p>'}
+    <div class="row"><button class="btn quiet" id="more">다른 문장</button><button class="btn quiet" id="back">지도</button></div></div>`;
+  $('more').onclick=()=>{sceneLines=pickScene(area);render()};$('back').onclick=()=>go('map');
+}
+
+/* catch card */
+function sheet(html,onClose){
+  const wrap=document.createElement('div');wrap.className='sheet-wrap';wrap.innerHTML=`<div class="sheet" role="dialog">${html}</div>`;
+  document.body.appendChild(wrap);wrap.onclick=e=>{if(e.target===wrap){wrap.remove();onClose&&onClose()}};
+  return wrap;
+}
+function family(w){
+  const hj=W[w]?.hj;if(!hj)return '';
+  return [...hj].filter(c=>D.hanja[c]).map(c=>{
+    const fam=D.words.filter(x=>x.w!==w&&x.hj&&x.hj.includes(c)&&x.area<=reached()).slice(0,8);
+    return `<div class="ch"><span class="c">${c}</span><span class="en" hidden>${esc(D.hanja[c])}</span>${fam.length?`<span class="fam">${fam.map(x=>`<span>${esc(x.w)}${caught(x.w)?' ✓':''}</span>`).join('')}</span>`:''}</div>`}).join('');
+}
+function wordCard(w,lineIdx,noEx){
+  const d=defOf(w)||{k:null,e:''},x=W[w];const ex=lineIdx!=null?D.lines[lineIdx]:D.lines[exLines(w)[0]];
+  return `<div class="big">${esc(w)} ${x.pos?`<span class="pos">${esc(x.pos)}</span>`:''}<button class="q" id="spk" aria-label="듣기">♪</button></div>
+    <div class="def">${d.k?esc(d.k):'<span class="label">뜻</span>'} <button class="q" id="enq" aria-label="영어로 보기">?</button> <span class="en" id="en" hidden>${esc(d.e)}</span></div>
+    ${ex&&!noEx?`<div class="ex noTap">${esc(ex.t).replace(new RegExp(w.replace(/다$/,'')),m=>`<b>${m}</b>`)}</div>`:''}
+    ${x.hj?`<div class="hj"><span class="label">한자 ${esc(x.hj)}</span>${family(w)}</div>`:''}
+    ${x.note?`<p class="sub">${esc(x.note)}</p>`:''}`;
+}
+function wireCard(wrap,w){
+  wrap.querySelector('#spk').onclick=()=>say(w);
+  wrap.querySelector('#enq').onclick=()=>{wrap.querySelectorAll('#en,.hj .en').forEach(e=>e.hidden=!e.hidden)};
+}
+function openCatch(w,lineIdx){
+  $('gloss').hidden=true;const x=W[w];const capped=S.newToday>=CAP&&x.cat!=='mon';
+  const wrap=sheet(`${wordCard(w,lineIdx)}<div class="row">
+    <button class="btn go" id="catch" ${capped?'disabled':''}>${x.cat==='mon'?'도감에 등록':'잡기!'}</button>
+    ${x.cat!=='mon'?'<button class="btn quiet" id="knew">이미 알아요</button>':''}</div>
+    ${capped?'<p class="sub">오늘은 새 단어를 다 잡았어요. 풀숲에서 복습하고 내일 또 와요.</p>':''}`,()=>render());
+  wireCard(wrap,w);say(w);
+  wrap.querySelector('#catch').onclick=()=>{
+    if(x.cat==='mon'){S.caught[w]={b:5,due:Infinity,known:true,t:Date.now()};save();wrap.remove();toast(w+' 등록!');render();return}
+    S.caught[w]={b:0,due:Date.now()+GAP[0],t:Date.now()};S.newToday++;save();wrap.remove();battle([w],lineIdx);
+  };
+  wrap.querySelector('#knew')?.addEventListener('click',()=>{S.caught[w]={b:4,due:Date.now()+GAP[4],known:true,t:Date.now()};save();wrap.remove();toast('알고 있는 단어로 기록했어요');render()});
+}
+
+/* battle: fill the blank with the word, in a line you haven't just seen */
+function distractors(w,n=2){
+  const x=W[w],verb=w.endsWith('다');
+  const same=y=>y.w!==w&&y.cat===x.cat&&y.w.endsWith('다')===verb&&y.area<=reached();
+  let pool=D.words.filter(y=>same(y)&&Math.abs(y.w.length-w.length)<=1);if(pool.length<n)pool=D.words.filter(same);
+  const out=[];let guard=0;while(out.length<n&&pool.length&&guard++<50){const y=pool[Math.random()*pool.length|0];if(!out.includes(y.w))out.push(y.w)}return out;
+}
+/* blank the word in one of its lines: a noun keeps its particle (도감__을), a verb/adjective blanks the whole conjugated word */
+function clozeOf(w,avoid){ // blank the word in one of its lines: the whole conjugated form, or a noun without its particle
+  const all=exLines(w),ls=all.filter(i=>i!=avoid),pick=ls.length?ls:all;if(!pick.length)return null;
+  const i=pick[Math.random()*pick.length|0],t=D.lines[i].t,verb=w.endsWith('다'),stem=verb?w.slice(0,-1):w;
+  let at=-1,end=-1;
+  for(const m of t.matchAll(/[가-힣]+/g))if((D.tap[m[0]]||[]).includes(w)){at=m.index;end=at+m[0].length;break}
+  if(at<0){at=t.indexOf(stem);if(at<0)return null;end=at+stem.length;if(verb)while(end<t.length&&/[가-힣]/.test(t[end]))end++}
+  else if(!verb&&t.startsWith(w,at))end=at+w.length;
+  return {i,before:t.slice(0,at),after:t.slice(end),shown:t.slice(at,end)};
+}
+function battle(queue,avoid,onDone){
+  const w=queue[0];if(!w){render();onDone&&onDone();return}
+  const c=clozeOf(w,avoid);
+  if(!c){S.caught[w].b=Math.max(S.caught[w].b,1);S.caught[w].due=Date.now()+GAP[1];save();toast(w+' 잡았다!');battle(queue.slice(1),avoid,onDone);return}
+  const opts=[w,...distractors(w)].sort(()=>Math.random()-.5);
+  const wrap=sheet(`<div class="mon"><canvas id="cv"></canvas><div style="flex:1"><div class="label">야생의 단어가 나타났다!</div><div class="hp"><i id="hp" style="width:100%"></i></div></div></div>
+    <div class="ex noTap">${esc(c.before)}<b>　？　</b>${esc(c.after)}</div>
+    <div class="opts">${opts.map(o=>`<button class="opt" data-o="${esc(o)}">${esc(o)}</button>`).join('')}</div>`);
+  critter(wrap.querySelector('#cv'),w,(w.charCodeAt(0)*7)%360);
+  let missed=false;
+  wrap.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{
+    if(b.dataset.o===w){b.classList.add('right');wrap.querySelector('#hp').style.width='0%';
+      const r=S.caught[w];r.b=missed?0:Math.max(r.b,1);r.due=Date.now()+GAP[r.b];save();say(c.before+c.shown+c.after);
+      setTimeout(()=>{wrap.remove();toast(missed?'다시 연습해요':w+' 잡았다!');battle(queue.slice(1),avoid,onDone)},900)}
+    else{b.classList.add('wrong');missed=true}
+  });
+}
+
+/* wild encounters = reviews of due words, in a sentence from an area you've reached */
+function viewWild(){
+  const due=dueList();
+  $('view').innerHTML=due.length?`<div class="scene"><h2>풀숲</h2><p class="sub">단어 ${due.length}개가 기다려요.</p><div class="row"><button class="btn go" id="start">들어가기</button></div></div>`
+    :`<p class="empty">풀숲이 조용해요.<br>${nextDueText()}</p>`;
+  $('start')?.addEventListener('click',()=>review(due.slice(0,15)));
+}
+function nextDueText(){const t=Object.values(S.caught).filter(r=>!r.known&&isFinite(r.due)).map(r=>r.due).sort((a,b)=>a-b)[0];if(!t)return '지도에서 단어를 잡아 보세요.';const m=Math.max(1,Math.round((t-Date.now())/60e3));return `다음 단어: ${m<60?m+'분':Math.round(m/60)+'시간'} 후`}
+function review(queue){
+  const w=queue[0];if(!w){render();toast('풀숲 끝!');return}
+  const r=S.caught[w],kind=r.b>=1&&Math.random()<.5?'cloze':'recall';
+  const grade=ok=>{r.b=ok?Math.min(GAP.length-1,r.b+1):0;r.due=Date.now()+GAP[r.b];save()};
+  if(kind==='cloze'){battle([w],null,()=>review(queue.slice(1)));return}
+  const ls=exLines(w),i=ls[Math.random()*ls.length|0];
+  const wrap=sheet(`<div class="label">야생의 단어</div>
+    ${i!=null?`<div class="ex">${lineHTML(D.lines[i].t,{glow:false}).replace(new RegExp(`(<span class="w[^"]*" data-e="[^"]*" data-w="${w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}">)([^<]+)`),'$1<b>$2</b>')}</div>`:''}
+    <div class="big">${esc(w)} <button class="q" id="spk" aria-label="듣기">♪</button></div><div id="back" hidden>${wordCard(w,i,true).replace(/^<div class="big">.*?<\/div>/s,'')}</div>
+    <div class="row" id="r1"><button class="btn go" id="show">뜻 보기</button></div>
+    <div class="row" id="r2" hidden><button class="btn quiet" id="no">몰라</button><button class="btn go" id="yes">알아</button></div>`,()=>render());
+  say(w);wrap.querySelector('#spk').onclick=()=>say(w);
+  wrap.querySelector('#show').onclick=()=>{wrap.querySelector('#back').hidden=false;wrap.querySelector('#r1').hidden=true;wrap.querySelector('#r2').hidden=false;
+    const q=wrap.querySelector('#enq');if(q)q.onclick=()=>wrap.querySelectorAll('#en,.hj .en').forEach(e=>e.hidden=!e.hidden)};
+  wrap.querySelector('#no').onclick=()=>{grade(false);wrap.remove();review(queue.slice(1))};
+  wrap.querySelector('#yes').onclick=()=>{grade(true);wrap.remove();review(queue.slice(1))};
+}
+
+/* dex */
+let dexTab='word';
+function viewDex(){
+  const r=reached(),tabs=[['word','말'],['tech','기술·도구'],['mon','포켓몬'],['root','뿌리']];
+  const ws=D.words.filter(w=>w.cat===dexTab&&w.area<=r);const got=ws.filter(w=>caught(w.w));
+  $('view').innerHTML=`<div class="scene"><div class="tabs">${tabs.map(([k,l])=>`<button class="tab" data-t="${k}" aria-pressed="${k===dexTab}">${l}</button>`).join('')}</div>
+    <p class="sub">${got.length} / ${ws.length} 잡았어요.</p>
+    <div class="grid">${ws.map(w=>{const c=caught(w.w),L=c?S.caught[w.w]:null;
+      return c?`<button class="tile" data-w="${esc(w.w)}"><span class="k">${esc(w.w)}</span><span class="pips${L.known?' known':''}">${[1,2,3,4,5].map(n=>`<i class="${L.b>=n?'on':''}"></i>`).join('')}</span></button>`
+        :`<div class="tile unseen"><span class="k">???</span><span class="pips">${'<i></i>'.repeat(5)}</span></div>`}).join('')}</div></div>`;
+  $('view').querySelectorAll('.tab').forEach(b=>b.onclick=()=>{dexTab=b.dataset.t;render()});
+  $('view').querySelectorAll('.tile[data-w]').forEach(b=>b.onclick=()=>{const w=b.dataset.w;const wrap=sheet(wordCard(w)+`<div class="sub">${exLines(w).length}개 문장에 나와요.</div>`);wireCard(wrap,w)});
+}
+
+render();
+</script>
+</body></html>

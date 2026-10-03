@@ -1,0 +1,1225 @@
+id	word	english	sentence
+포켓몬#0	포켓몬	Pokémon	풀숲에서 작은 포켓몬을 만났어요.
+포켓몬#1	포켓몬	Pokémon	나는 물 포켓몬을 제일 좋아해.
+나#0	나	I, me (informal)	나도 같이 가고 싶어!
+나#1	나	I, me (informal)	이건 나한테 너무 어려워.
+수#0	수	way; possibility	오늘은 같이 놀 수 있어요?
+수#1	수	way; possibility	비가 와서 밖에 나갈 수가 없어요.
+좋다#0	좋다	to be good	오늘은 날씨가 정말 좋아요.
+좋다#1	좋다	to be good	이 가방이 더 좋은 것 같아요.
+거#0	거	thing (colloquial)	이거 누구 거예요? 이름이 없어요.
+거#1	거	thing (colloquial)	맛있는 거 먹으러 가자!
+트레이너#0	트레이너	trainer	저 트레이너는 포켓몬이 여섯 마리예요.
+트레이너#1	트레이너	trainer	나도 언젠가 좋은 트레이너가 될 거야.
+페이지#0	페이지	page	도감의 첫 페이지를 열어 봤어요.
+페이지#1	페이지	page	숙제는 책 십 페이지까지예요.
+볼#0	볼	ball, English	가방에 몬스터볼이 다섯 개 있어요.
+볼#1	볼	ball, English	친구들과 공원에서 핸드볼을 했어요.
+쓰다#0	쓰다	to use; write; bitter	이 상처약을 지금 쓸게요.
+쓰다#1	쓰다	to use; write; bitter	이 약은 너무 써서 못 먹겠어요.
+만들다#0	만들다	to make	엄마랑 같이 김밥을 만들었어요.
+만들다#1	만들다	to make	종이로 작은 배를 만들어 봤어요.
+싸우다#0	싸우다	to fight	동생이랑 또 싸웠어요?
+싸우다#1	싸우다	to fight	꼬렛 두 마리가 풀숲에서 싸우고 있어요.
+체육관#0	체육관	Gym	학교 체육관에서 농구를 했어요.
+체육관#1	체육관	Gym	체육관에서 배틀을 해 보고 싶어요.
+상태#0	상태	condition, state	이상해씨 상태가 좀 안 좋아요.
+상태#1	상태	condition, state	오늘은 몸 상태가 아주 좋아요.
+말다#0	말다	to not do; stop	여기서 뛰지 마세요.
+말다#1	말다	to not do; stop	걱정하지 마, 내가 도와줄게.
+시티#0	시티	city	상록시티는 태초마을보다 커요.
+시티#1	시티	city	회색시티에는 큰 바위가 많아요.
+지다#0	지다	to become; to lose	배틀에서 아깝게 졌어요.
+지다#1	지다	to become; to lose	날씨가 점점 따뜻해졌어요.
+한#0	한	one; (form of 하다)	사과 한 개만 주세요.
+한#1	한	one; (form of 하다)	한 번만 더 해 볼게요.
+기운#0	기운	energy, vigor	밥을 먹으니까 기운이 나요.
+기운#1	기운	energy, vigor	피카츄가 기운이 없어 보여요.
+네#0	네	four (before units); yes	네, 지금 바로 갈게요!
+네#1	네	four (before units); yes	가게에서 빵을 네 개 샀어요.
+마을#0	마을	village	우리 마을은 작지만 조용해요.
+마을#1	마을	village	마을 사람들이 모두 친절해요.
+어떻다#0	어떻다	how; to be how	새로 산 신발은 어때요?
+어떻다#1	어떻다	how; to be how	이 문제는 어떻게 풀어요?
+가끔#0	가끔	sometimes	가끔 친구랑 영화를 봐요.
+가끔#1	가끔	sometimes	숲에서 가끔 피카츄가 나와요.
+도구#0	도구	tool	가방에 도구를 넣어 두었어요.
+도구#1	도구	tool	이 도구는 어디에 쓰는 거예요?
+맡기다#0	맡기다	to entrust	여행 동안 고양이를 친구한테 맡겼어요.
+맡기다#1	맡기다	to entrust	포켓몬을 간호사에게 맡겼어요.
+버튼#0	버튼	button	이 버튼을 누르면 문이 열려요.
+버튼#1	버튼	button	엘리베이터 버튼을 눌러 주세요.
+앞#0	앞	front	집 앞에 큰 나무가 있어요.
+앞#1	앞	front	앞에 트레이너가 서 있어요.
+이기다#0	이기다	to win	첫 배틀에서 이겼어요!
+이기다#1	이기다	to win	이번 경기는 꼭 이기고 싶어.
+찾다#0	찾다	to look for	열쇠를 계속 찾고 있어요.
+찾다#1	찾다	to look for	풀숲에서 캐터피를 찾았어요.
+개#0	개	(counter) items; dog	사탕을 세 개 먹었어요.
+개#1	개	(counter) items; dog	옆집 개가 아침마다 짖어요.
+고르다#0	고르다	to choose	셋 중에 하나만 고르세요.
+고르다#1	고르다	to choose	어떤 포켓몬을 고를지 모르겠어요.
+더#0	더	more	조금 더 쉬고 갈까요?
+더#1	더	more	물을 한 잔 더 주세요.
+독#0	독	poison, venom	산에서 독버섯을 조심하세요.
+독#1	독	poison, venom	뿔충이한테 찔리면 해독제가 필요해요.
+배지#0	배지	badge	가방에 귀여운 배지를 달았어요.
+배지#1	배지	badge	학교 배지를 옷에 달아야 해요.
+센터#0	센터	center	포켓몬센터에서 잠깐 쉬었어요.
+센터#1	센터	center	시내 쇼핑센터에 사람이 많아요.
+쉽다#0	쉽다	easy	이 문제는 생각보다 쉬워요.
+쉽다#1	쉽다	easy	캐터피는 잡기가 쉬운 편이에요.
+야생#0	야생	wild	야생 포켓몬이 갑자기 나왔어요.
+야생#1	야생	wild	여기는 야생 동물이 많이 살아요.
+열리다#0	열리다	to be opened	바람 때문에 창문이 열렸어요.
+열리다#1	열리다	to be opened	가게 문이 아홉 시에 열려요.
+적히다#0	적히다	to be written	공책에 내 이름이 적혀 있어요.
+적히다#1	적히다	to be written	표에 가격이 적혀 있지 않아요.
+집#0	집	house; home	오늘은 일찍 집에 갈게요.
+집#1	집	house; home	우리 집은 학교 바로 옆이에요.
+화상#0	화상	burn (injury)	파이리 불에 닿으면 화상을 입어요.
+화상#1	화상	burn (injury)	화상을 입어서 손이 아파요.
+가지다#0	가지다	to have, hold	나는 몬스터볼을 세 개 가지고 있어.
+가지다#1	가지다	to have, hold	우산 가지고 왔어요?
+관장#0	관장	Gym Leader	도서관 관장님이 인사를 하셨어요.
+관장#1	관장	Gym Leader	체육관 관장은 아주 강한 트레이너래요.
+기계#0	기계	machine	이 기계는 어떻게 켜요?
+기계#1	기계	machine	집에 있는 빨래 기계가 고장 났어요.
+꿈#0	꿈	dream	어젯밤에 무서운 꿈을 꿨어요.
+꿈#1	꿈	dream	내 꿈은 멋진 트레이너가 되는 거야.
+내용#0	내용	content	이 책 내용이 너무 어려워요.
+내용#1	내용	content	편지 내용을 다시 읽어 봤어요.
+누나#0	누나	older sister (of a male)	우리 누나는 요리를 잘해요.
+누나#1	누나	older sister (of a male)	누나, 같이 산책 갈래?
+다음#0	다음	next	다음 주에 시험이 있어요.
+다음#1	다음	next	다음 정거장에서 내리세요.
+대신#0	대신	instead	오늘은 밥 대신 빵을 먹었어요.
+대신#1	대신	instead	바쁘면 내가 대신 갈게.
+돈#0	돈	money	돈이 모자라서 하나만 샀어요.
+돈#1	돈	money	열심히 일해서 돈을 모았어요.
+따르다#0	따르다	to obey, follow	강아지가 나를 졸졸 따라와요.
+따르다#1	따르다	to obey, follow	선생님 말씀을 잘 따르세요.
+많이#0	많이	a lot	오늘 비가 많이 왔어요.
+많이#1	많이	a lot	많이 먹고 힘내서 가자!
+못#0	못	cannot; nail	너무 졸려서 숙제를 못 했어요.
+못#1	못	cannot; nail	벽에 못을 하나 박았어요.
+바위#0	바위	rock	길 가운데에 큰 바위가 있어요.
+바위#1	바위	rock	바위 위에 앉아서 쉬었어요.
+사다#0	사다	to buy; to treat	가게에서 상처약을 두 개 샀어요.
+사다#1	사다	to buy; to treat	오늘 저녁은 내가 살게!
+생각#0	생각	thought	좋은 생각이 났어요!
+생각#1	생각	thought	그 일은 다시 생각해 볼게요.
+스피드#0	스피드	speed	피카츄는 스피드가 정말 빨라요.
+스피드#1	스피드	speed	스피드가 높으면 먼저 공격해요.
+아#0	아	ah, oh	아, 이제 무슨 뜻인지 알겠어요!
+아#1	아	ah, oh	아, 지갑을 집에 두고 왔어요.
+아이#0	아이	child	공원에서 아이들이 놀고 있어요.
+아이#1	아이	child	그 아이는 벌써 여덟 살이에요.
+어렵다#0	어렵다	to be difficult	한국어 발음은 조금 어려워요.
+어렵다#1	어렵다	to be difficult	이 퍼즐은 너무 어려워서 못 풀겠어.
+여자#0	여자	woman	저 여자는 우리 선생님이에요.
+여자#1	여자	woman	여자 화장실은 이쪽이에요.
+왠지#0	왠지	somehow	오늘은 왠지 기분이 좋아요.
+왠지#1	왠지	somehow	왠지 비가 올 것 같아요.
+원#0	원	won; member	이 빵은 천 원이에요.
+원#1	원	won; member	우리 팀원은 모두 다섯 명이에요.
+음식#0	음식	food	이 식당은 음식이 맛있어요.
+음식#1	음식	food	매운 음식을 잘 먹어요?
+이용#0	이용	use	버스를 이용해서 학교에 가요.
+이용#1	이용	use	포켓몬센터는 누구나 이용할 수 있어요.
+잠들다#0	잠들다	to fall asleep	책을 읽다가 잠들었어요.
+잠들다#1	잠들다	to fall asleep	아기가 이제 막 잠들었어요.
+전부#0	전부	all	숙제를 전부 끝냈어요.
+전부#1	전부	all	이거 전부 얼마예요?
+정보#0	정보	information	도감에 포켓몬 정보가 있어요.
+정보#1	정보	information	인터넷에서 정보를 찾아봤어요.
+주마#0	주마	I'll do it for you (old-fashioned)	내가 길을 알려 주마.
+주마#1	주마	I'll do it for you (old-fashioned)	할아버지가 맛있는 걸 사 주마 하셨어요.
+책#0	책	book	요즘 재미있는 책을 읽고 있어요.
+책#1	책	book	책을 빌리러 도서관에 갔어요.
+터#0	터	site; ground	여기는 옛날 학교 터예요.
+터#1	터	site; ground	이 넓은 터에 공원을 만들 거래요.
+편리#0	편리	convenience	이 가방은 주머니가 많아서 편리해요.
+편리#1	편리	convenience	집 근처에 가게가 있어서 편리해요.
+가게#0	가게	shop, store	가게에서 우유를 샀어요.
+가게#1	가게	shop, store	이 가게는 몇 시에 닫아요?
+거리#0	거리	distance; street	집에서 학교까지 거리가 멀어요.
+거리#1	거리	distance; street	밤에 거리가 아주 조용해요.
+게다가#0	게다가	moreover, on top of that	비가 와요. 게다가 바람도 불어요.
+게다가#1	게다가	moreover, on top of that	이 식당은 싸고 게다가 맛있어요.
+계속#0	계속	continuously	아침부터 비가 계속 와요.
+계속#1	계속	continuously	계속 걸어서 다리가 아파요.
+곳#0	곳	place	여기는 조용해서 쉬기 좋은 곳이에요.
+곳#1	곳	place	어디 가고 싶은 곳 있어?
+공격력#0	공격력	attack power	파이리의 공격력이 올랐어요.
+공격력#1	공격력	attack power	공격력이 높은 포켓몬이 좋아요.
+굳다#0	굳다	to harden	떡이 하룻밤 사이에 굳었어요.
+굳다#1	굳다	to harden	추워서 손이 굳은 것 같아요.
+그렇게#0	그렇게	like that, so	그렇게 빨리 뛰지 마!
+그렇게#1	그렇게	like that, so	정말 그렇게 생각해요?
+기본#0	기본	basics, fundamentals	배틀의 기본부터 배워요.
+기본#1	기본	basics, fundamentals	인사는 기본이에요.
+깊다#0	깊다	to be deep	이 강은 생각보다 깊어요.
+깊다#1	깊다	to be deep	숲 깊은 곳은 어두워요.
+꼭#0	꼭	surely, be sure to	내일 꼭 전화해 주세요.
+꼭#1	꼭	surely, be sure to	이번에는 꼭 이길 거야!
+나다#0	나다	to occur, break (down)	길에서 작은 사고가 났어요.
+나다#1	나다	to occur, break (down)	기계가 고장 나서 못 써요.
+날리다#0	날리다	to blow away	바람이 내 모자를 날렸어요.
+날리다#1	날리다	to blow away	종이를 바람에 날려 버렸어요.
+너무#0	너무	too, very	오늘은 너무 더워요.
+너무#1	너무	too, very	너무 많이 먹어서 배가 불러요.
+년#0	년	year	한국어를 삼 년 동안 배웠어요.
+년#1	년	year	이 집은 지은 지 십 년이 됐어요.
+뉴스#0	뉴스	news	아침마다 뉴스를 봐요.
+뉴스#1	뉴스	news	좋은 뉴스가 있어요!
+다니다#0	다니다	to go around, travel	형은 회사에 다녀요.
+다니다#1	다니다	to go around, travel	여러 도로를 다니며 포켓몬을 잡았어요.
+대체#0	대체	on earth (in questions)	너 대체 어디 갔었어?
+대체#1	대체	on earth (in questions)	이게 대체 무슨 소리예요?
+덤비다#0	덤비다	to come at, challenge	작은 꼬렛이 나한테 덤볐어요.
+덤비다#1	덤비다	to come at, challenge	자, 겁내지 말고 덤벼 봐!
+도전#0	도전	challenge	새로운 요리에 도전해 봤어요.
+도전#1	도전	challenge	체육관에 도전하고 싶어요.
+돕다#0	돕다	to help	친구가 이사하는 걸 도왔어요.
+돕다#1	돕다	to help	도와줘서 정말 고마워요.
+된다#0	된다	becomes	물이 얼면 얼음이 된다.
+된다#1	된다	becomes	이제 들어가도 된다.
+들어가다#0	들어가다	to go in	비가 와서 집에 들어갔어요.
+들어가다#1	들어가다	to go in	이 숲에 들어가면 길을 잃기 쉬워요.
+똑같이#0	똑같이	equally, the same	우리는 빵을 똑같이 나눠 먹었어요.
+똑같이#1	똑같이	equally, the same	두 사람이 옷을 똑같이 입었어요.
+마지막#0	마지막	last; final	이게 마지막 문제예요.
+마지막#1	마지막	last; final	마지막 버스를 놓쳤어요.
+매우#0	매우	very	오늘은 매우 추워요.
+매우#1	매우	very	이 포켓몬은 매우 귀여워요.
+먼저#0	먼저	first	먼저 손을 씻으세요.
+먼저#1	먼저	first	저는 먼저 집에 갈게요.
+모양#0	모양	shape	구름 모양이 꼭 토끼 같아요.
+모양#1	모양	shape	이 쿠키는 별 모양이에요.
+모처럼#0	모처럼	for once, specially	모처럼 날씨가 맑아요.
+모처럼#1	모처럼	for once, specially	모처럼 친구들을 만났어요.
+무리#0	무리	group; herd	구구 무리가 하늘을 날아가요.
+무리#1	무리	group; herd	숲에서 캐터피 무리를 봤어요.
+반드시#0	반드시	certainly, without fail	약속은 반드시 지켜야 해요.
+반드시#1	반드시	certainly, without fail	반드시 다시 올게요.
+법#0	법	law; way	몬스터볼을 던지는 법을 배웠어요.
+법#1	법	law; way	모두 법을 지켜야 해요.
+별명#0	별명	nickname	친구들이 나를 별명으로 불러요.
+별명#1	별명	nickname	꼬부기에게 귀여운 별명을 지어 줬어요.
+볼일#0	볼일	errand, business	잠깐 볼일이 있어서 나가요.
+볼일#1	볼일	errand, business	볼일 다 보면 전화할게.
+붉다#0	붉다	to be red	저녁 하늘이 붉게 물들었어요.
+붉다#1	붉다	to be red	파이리 꼬리 불이 붉어요.
+빠르다#0	빠르다	fast	피카츄는 정말 빨라요.
+빠르다#1	빠르다	fast	버스보다 지하철이 더 빨라요.
+사이#0	사이	between, gap	두 집 사이에 작은 길이 있어요.
+사이#1	사이	between, gap	우리는 사이가 아주 좋아요.
+서두르다#0	서두르다	to hurry	늦었으니까 서둘러요!
+서두르다#1	서두르다	to hurry	서두르지 말고 천천히 해.
+손자#0	손자	grandson	할머니는 손자를 아주 좋아하세요.
+손자#1	손자	grandson	손자가 할아버지를 도와드려요.
+숲#0	숲	forest	상록숲은 나무가 아주 많아요.
+숲#1	숲	forest	숲에서 새소리가 들려요.
+시험#0	시험	test, trial	내일 한국어 시험이 있어요.
+시험#1	시험	test, trial	새 기계를 시험해 봤어요.
+싸다#0	싸다	cheap; to wrap	이 가게는 물건이 싸요.
+싸다#1	싸다	cheap; to wrap	선물을 예쁜 종이로 쌌어요.
+아아#0	아아	ah! argh!	아아, 다리가 너무 아파!
+아아#1	아아	ah! argh!	아아, 깜짝 놀랐어요!
+알#0	알	egg	새 둥지에 알이 세 개 있어요.
+알#1	알	egg	닭이 아침에 알을 하나 낳았어요.
+어#0	어	fish, 魚	저녁에 연어를 구워 먹었어요.
+어#1	어	fish, 魚	고등어는 바다에서 잡히는 물고기예요.
+어서#0	어서	quickly; welcome	어서 오세요! 뭘 찾으세요?
+어서#1	어서	quickly; welcome	날이 어두워요. 어서 집에 가자.
+얼음#0	얼음	ice	물에 얼음을 넣어 주세요.
+얼음#1	얼음	ice	겨울에 강물이 얼음이 됐어요.
+열심히#0	열심히	hard, diligently	매일 열심히 공부해요.
+열심히#1	열심히	hard, diligently	꼬부기가 열심히 연습했어요.
+완벽#0	완벽	perfection	오늘 발표는 완벽했어요.
+완벽#1	완벽	perfection	완벽한 사람은 없어요.
+요즘#0	요즘	these days	요즘 일이 많이 바빠요?
+요즘#1	요즘	these days	요즘 비가 자주 와요.
+위험#0	위험	danger	밤에 숲에 가면 위험해요.
+위험#1	위험	danger	위험하니까 조심하세요!
+이루다#0	이루다	to achieve	드디어 꿈을 이뤘어요.
+이루다#1	이루다	to achieve	목표를 이루려면 노력해야 해요.
+이번#0	이번	this time	이번 주말에 뭐 해요?
+이번#1	이번	this time	이번에는 내가 먼저 할게.
+일단#0	일단	first, for now	배고파. 일단 밥부터 먹자.
+일단#1	일단	first, for now	일단 포켓몬센터에 가서 쉬어요.
+잊다#0	잊다	to forget	친구 생일을 잊어버렸어요.
+잊다#1	잊다	to forget	이 날은 절대 잊지 않을 거예요.
+작성#0	작성	writing, drawing up	보고서를 작성하고 있어요.
+작성#1	작성	writing, drawing up	이 종이에 이름을 작성해 주세요.
+재밌다#0	재밌다	to be fun	이 영화 정말 재밌어요.
+재밌다#1	재밌다	to be fun	배틀은 언제나 재밌어!
+점점#0	점점	gradually	날씨가 점점 추워져요.
+점점#1	점점	gradually	한국어 실력이 점점 늘고 있어요.
+정도#0	정도	degree; about	여기서 십 분 정도 걸려요.
+정도#1	정도	degree; about	이 정도면 충분해요.
+조금#0	조금	a little	조금만 기다려 주세요.
+조금#1	조금	a little	소금을 조금 넣어요.
+종류#0	종류	kind; type	이 가게에는 빵 종류가 많아요.
+종류#1	종류	kind; type	포켓몬은 종류가 아주 많아요.
+줄어들다#0	줄어들다	to decrease, shrink	빨았더니 옷이 줄어들었어요.
+줄어들다#1	줄어들다	to decrease, shrink	가방 안의 상처약이 점점 줄어들어요.
+증표#0	증표	token, proof	이 카드는 회원이라는 증표예요.
+증표#1	증표	token, proof	우정의 증표로 반지를 줬어요.
+지방#0	지방	region	이 지방은 겨울에 눈이 많이 와요.
+지방#1	지방	region	지방마다 음식 맛이 달라요.
+짓다#0	짓다	to build; to make	마을에 새 집을 짓고 있어요.
+짓다#1	짓다	to build; to make	아침에 밥을 지었어요.
+참#0	참	truly; truth	오늘 날씨가 참 좋네요.
+참#1	참	truly; truth	그 말이 참인지 거짓인지 모르겠어요.
+최고#0	최고	the best	엄마가 만든 김치가 최고예요!
+최고#1	최고	the best	오늘 날씨 좋다! 기분 최고야!
+켜다#0	켜다	to turn on	방이 어두우니까 불을 켜 주세요.
+켜다#1	켜다	to turn on	컴퓨터를 켜고 메일을 봤어요.
+튀어나오다#0	튀어나오다	to stick out	풀숲에서 꼬렛이 튀어나왔어요.
+튀어나오다#1	튀어나오다	to stick out	벽에서 못이 튀어나와 있어요.
+퍼지다#0	퍼지다	to spread	소문이 마을에 금방 퍼졌어요.
+퍼지다#1	퍼지다	to spread	빵 냄새가 방 안에 퍼졌어요.
+풀#0	풀	grass	소가 풀을 먹고 있어요.
+풀#1	풀	grass	키 큰 풀숲에는 포켓몬이 숨어 있어요.
+필요#0	필요	need	여행에는 물이 꼭 필요해요.
+필요#1	필요	need	도움이 필요하면 말해 줘.
+항상#0	항상	always	아빠는 항상 일찍 일어나요.
+항상#1	항상	always	항상 도와줘서 고마워요.
+현재#0	현재	present; now	현재 시간은 세 시예요.
+현재#1	현재	present; now	현재 레벨은 몇이에요?
+회복#0	회복	recovery	포켓몬센터에서 체력을 회복했어요.
+회복#1	회복	recovery	감기에서 빨리 회복하세요.
+빨리#0	빨리	quickly	빨리 와! 버스가 벌써 왔어.
+빨리#1	빨리	quickly	숙제를 빨리 끝냈어요.
+능력#0	능력	ability, stats	이 포켓몬은 능력이 아주 높아요.
+능력#1	능력	ability, stats	그 사람은 노래하는 능력이 있어요.
+레벨#0	레벨	level	꼬부기 레벨이 하나 올랐어요.
+레벨#1	레벨	level	레벨이 높은 포켓몬은 강해요.
+무섭다#0	무섭다	scary	밤의 숲은 좀 무서워요.
+무섭다#1	무섭다	scary	무서운 영화를 봤어요.
+빠져나가다#0	빠져나가다	to slip out	고양이가 문틈으로 빠져나갔어요.
+빠져나가다#1	빠져나가다	to slip out	사람이 많아서 빠져나가기 힘들어요.
+어차피#0	어차피	anyway, after all	어차피 늦었으니까 천천히 가자.
+어차피#1	어차피	anyway, after all	어차피 할 일이면 지금 해요.
+커지다#0	커지다	to grow bigger	소리가 점점 커졌어요.
+커지다#1	커지다	to grow bigger	강아지가 많이 커졌어요.
+무선#0	무선	wireless	무선 이어폰을 새로 샀어요.
+무선#1	무선	wireless	이 기계는 무선으로 연결돼요.
+참가#0	참가	participation	축구 대회에 참가하고 싶어요.
+참가#1	참가	participation	참가 신청은 내일까지예요.
+친구#0	친구	friend	친구랑 같이 2번 도로를 걸었어요.
+친구#1	친구	friend	어릴 때부터 친한 친구예요.
+나무#0	나무	tree, wood	나무 아래에서 잠깐 쉬어요.
+나무#1	나무	tree, wood	이 의자는 나무로 만들었어요.
+모두#0	모두	all; everyone	모두 같이 사진 찍어요!
+모두#1	모두	all; everyone	숙제를 모두 끝냈어요.
+어댑터#0	어댑터	adapter	어댑터를 꽂아야 게임기가 켜져요.
+어댑터#1	어댑터	adapter	여행 갈 때 어댑터를 챙기세요.
+두#0	두	two (before units)	사과를 두 개 샀어요.
+두#1	두	two (before units)	친구 두 명이 놀러 왔어요.
+박스#0	박스	box	빈 박스에 장난감을 넣었어요.
+박스#1	박스	box	이사할 때 박스가 많이 필요해요.
+인원수#0	인원수	number of people	배틀 인원수는 두 명이에요.
+인원수#1	인원수	number of people	인원수가 많아서 의자가 모자라요.
+특집#0	특집	special feature	오늘 뉴스는 포켓몬 특집이에요.
+특집#1	특집	special feature	이번 잡지는 여름 여행 특집이에요.
+니드#0	니드	needle (root)	니드는 바늘이라는 뜻이래요.
+니드#1	니드	needle (root)	이름에 니드가 들어간 포켓몬은 가시가 있대요.
+듯하다#0	듯하다	to seem	하늘을 보니 곧 비가 올 듯해요.
+듯하다#1	듯하다	to seem	뭔가 잊어버린 듯해요.
+열매#0	열매	fruit, berry	나무에 빨간 열매가 많이 열렸어요.
+열매#1	열매	fruit, berry	포켓몬에게 열매를 하나 줬어요.
+이상#0	이상	more than	열 명 이상 모였어요.
+이상#1	이상	more than	레벨 오 이상인 포켓몬만 참가할 수 있어요.
+조정#0	조정	adjustment	의자 높이를 조정했어요.
+조정#1	조정	adjustment	약속 시간을 조금 조정할까요?
+코너#0	코너	corner, section	이 코너에서 몬스터볼을 팔아요.
+코너#1	코너	corner, section	책방 만화 코너에 사람이 많아요.
+그만두다#0	그만두다	to quit	형이 회사를 그만뒀어요.
+그만두다#1	그만두다	to quit	피곤하면 오늘은 그만두자.
+나쁘다#0	나쁘다	to be bad	오늘은 기분이 좀 나빠요.
+나쁘다#1	나쁘다	to be bad	거짓말은 나쁜 거예요.
+눈앞#0	눈앞	right in front of one's eyes	바다가 눈앞에 펼쳐졌어요.
+눈앞#1	눈앞	right in front of one's eyes	시험이 눈앞으로 다가왔어요.
+데려가다#0	데려가다	to take (someone)	강아지를 병원에 데려갔어요.
+데려가다#1	데려가다	to take (someone)	나도 숲에 데려가 줘!
+딱딱#0	딱딱	hard (root)	빵이 딱딱하게 굳었어요.
+딱딱#1	딱딱	hard (root)	딱충이 몸은 아주 딱딱해요.
+막#0	막	to block; just now	방금 막 도착했어요.
+막#1	막	to block; just now	큰 바위가 길을 막고 있어요.
+먹다#0	먹다	to eat	아침에 빵을 먹었어요.
+먹다#1	먹다	to eat	우리 같이 점심 먹을래?
+멈추다#0	멈추다	to stop	갑자기 비가 멈췄어요.
+멈추다#1	멈추다	to stop	시계가 멈춰서 늦었어요.
+바쁘다#0	바쁘다	busy	요즘 일이 많아서 바빠요.
+바쁘다#1	바쁘다	busy	바쁜데 와 줘서 고마워.
+방해#0	방해	interference, disturbance	공부하는데 방해하지 마.
+방해#1	방해	interference, disturbance	소리가 커서 잠에 방해가 돼요.
+분하다#0	분하다	vexed, frustrated	한 번 더 졌어요. 너무 분해요!
+분하다#1	분하다	vexed, frustrated	분해서 잠이 안 와요.
+사#0	사	four	우리 집은 사 층이에요.
+사#1	사	four	이 더하기 이는 사예요.
+소년#0	소년	boy	한 소년이 강가에서 낚시를 해요.
+소년#1	소년	boy	그 소년은 꿈이 트레이너래요.
+스프레이#0	스프레이	spray	벌레 스프레이를 뿌렸어요.
+스프레이#1	스프레이	spray	머리에 물 스프레이를 뿌렸어요.
+아까#0	아까	a little while ago	아까 누가 전화했어요.
+아까#1	아까	a little while ago	아까 먹은 빵이 맛있었어요.
+얼굴#0	얼굴	face	얼굴을 씻고 잠을 잤어요.
+얼굴#1	얼굴	face	피카츄 얼굴이 정말 귀여워요.
+연락#0	연락	contact	도착하면 연락해 주세요.
+연락#1	연락	contact	오랫동안 친구한테 연락이 없어요.
+우승#0	우승	victory	우리 반이 축구 대회에서 우승했어요.
+우승#1	우승	victory	우승하면 큰 선물을 받아요.
+적#0	적	enemy	그 포켓몬은 적이 아니에요.
+적#1	적	enemy	어제의 적이 오늘의 친구예요.
+존경#0	존경	respect	나는 우리 선생님을 존경해요.
+존경#1	존경	respect	모두가 존경하는 트레이너가 되고 싶어.
+첫#0	첫	first	오늘이 학교 첫날이에요.
+첫#1	첫	first	첫 포켓몬은 꼬부기로 했어요.
+취소#0	취소	cancel	비 때문에 소풍이 취소됐어요.
+취소#1	취소	cancel	예약을 취소하고 싶어요.
+키#0	키	height; key	동생은 키가 많이 컸어요.
+키#1	키	height; key	자동차 키를 어디 뒀더라?
+프로#0	프로	pro	형은 프로 축구 선수예요.
+프로#1	프로	pro	역시 프로는 달라요!
+회피#0	회피	evasion, avoiding	구구의 회피가 올라갔어요.
+회피#1	회피	evasion, avoiding	대답을 회피하지 마세요.
+꼬렛#0	꼬렛	Rattata — Pokémon	꼬렛은 보라색 털을 가진 쥐예요.
+꼬렛#1	꼬렛	Rattata — Pokémon	풀숲에서 꼬렛을 자주 만나요.
+분명#0	분명	certainty; surely	분명 여기 두었는데 없어요.
+분명#1	분명	certainty; surely	그건 분명한 사실이에요.
+일격#0	일격	a single blow	단 일격에 배틀이 끝났어요.
+일격#1	일격	a single blow	강한 일격을 맞고 쓰러졌어요.
+같이#0	같이	together	우리 같이 밥 먹을래요?
+같이#1	같이	together	피카츄랑 같이 숲을 걸었어요.
+도망치다#0	도망치다	to flee	야생 포켓몬이 도망쳤어요.
+도망치다#1	도망치다	to flee	개를 보고 고양이가 도망쳤어요.
+피#0	피	blood	넘어져서 무릎에서 피가 나요.
+피#1	피	blood	피가 멈출 때까지 눌러 주세요.
+가장#0	가장	most	이 과일이 가장 맛있어요.
+가장#1	가장	most	우리 반에서 가장 키가 커요.
+늦다#0	늦다	to be late	오늘 아침에 학교에 늦었어요.
+늦다#1	늦다	to be late	늦은 밤에 혼자 다니지 마세요.
+선물#0	선물	gift	생일 선물로 책을 받았어요.
+선물#1	선물	gift	친구한테 줄 선물을 샀어요.
+응원#0	응원	cheering, support	친구들이 큰 소리로 응원해 줬어요.
+응원#1	응원	cheering, support	응원 고마워! 힘낼게.
+효과#0	효과	effect	이 약은 효과가 아주 좋아요.
+효과#1	효과	effect	물 기술은 불 포켓몬에게 효과가 좋아요.
+있다#0	있다	to be; to have	가방에 몬스터볼이 세 개 있어요.
+있다#1	있다	to be; to have	저는 형이 한 명 있어요.
+보다#0	보다	to see; look	풀숲에서 꼬렛을 봤어요!
+보다#1	보다	to see; look	내일 같이 영화 볼래요?
+늘다#0	늘다	to increase	요즘 한국어 실력이 많이 늘었어요.
+늘다#1	늘다	to increase	도감 속 포켓몬이 하나씩 늘어요.
+주다#0	주다	to give	친구가 상처약을 하나 줬어요.
+주다#1	주다	to give	피카츄한테 물을 좀 주세요.
+도감#0	도감	Pokédex	도감을 펴서 구구를 찾아봤어요.
+도감#1	도감	Pokédex	언젠가 도감을 다 채우고 싶어요.
+그렇다#0	그렇다	to be so	정말 그래요? 몰랐어요.
+그렇다#1	그렇다	to be so	그렇게 어려운 문제는 아니에요.
+받다#0	받다	to receive	생일에 친구한테 선물을 받았어요.
+받다#1	받다	to receive	엄마한테서 전화를 받았어요.
+잡다#0	잡다	to catch; to grab	상록숲에서 캐터피를 잡았어요!
+잡다#1	잡다	to catch; to grab	엄마 손을 꼭 잡고 걸었어요.
+오다#0	오다	to come	내일 친구가 우리 집에 와요.
+오다#1	오다	to come	밖에 비가 많이 오네요.
+몬스터#0	몬스터	monster	몬스터볼은 생각보다 작아요.
+몬스터#1	몬스터	monster	어릴 때 몬스터 영화를 좋아했어요.
+않다#0	않다	not (do)	오늘은 별로 춥지 않아요.
+않다#1	않다	not (do)	동생은 채소를 먹지 않아요.
+가득#0	가득	full	가방에 몬스터볼이 가득 있어요.
+가득#1	가득	full	컵에 물을 가득 부었어요.
+나오다#0	나오다	to come out	풀숲에서 구구가 나왔어요!
+나오다#1	나오다	to come out	집에서 늦게 나와서 뛰었어요.
+모르다#0	모르다	to not know	이 말의 뜻을 몰라요.
+모르다#1	모르다	to not know	길을 모르면 물어보세요.
+자#0	자	ruler	자로 선을 똑바로 그었어요.
+자#1	자	ruler	책상 위에 자가 있어요.
+체력#0	체력	HP, stamina	꼬부기의 체력이 거의 없어요.
+체력#1	체력	HP, stamina	운동을 해서 체력이 좋아졌어요.
+할아버지#0	할아버지	grandfather	할아버지는 매일 아침 산책하세요.
+할아버지#1	할아버지	grandfather	할아버지 댁은 태초마을에 있어요.
+끝나다#0	끝나다	to end, finish	수업이 세 시에 끝나요.
+끝나다#1	끝나다	to end, finish	배틀이 끝나고 포켓몬을 쉬게 했어요.
+들다#0	들다	to hold; be inside	가방을 들고 집을 나왔어요.
+들다#1	들다	to hold; be inside	이 상자 안에 뭐가 들어 있어요?
+부탁#0	부탁	request, favor	부탁 하나 해도 돼요?
+부탁#1	부탁	request, favor	친구의 부탁을 들어줬어요.
+전하다#0	전하다	to deliver; to convey	친구에게 고맙다고 전해 주세요.
+전하다#1	전하다	to deliver; to convey	이 편지를 엄마께 전했어요.
+기술#0	기술	skill, technique; move	파이리가 새 기술을 배웠어요.
+기술#1	기술	skill, technique; move	요리 기술을 배우고 싶어요.
+리그#0	리그	league	우리 학교 축구 리그가 시작됐어요.
+리그#1	리그	league	동네 야구 리그에서 이겼어요.
+맵다#0	맵다	spicy	이 라면은 너무 매워요!
+맵다#1	맵다	spicy	매운 음식을 잘 먹어요?
+상품#0	상품	product, goods	이 가게는 상품이 많아요.
+상품#1	상품	product, goods	새 상품이 오늘 들어왔어요.
+엄마#0	엄마	mom	엄마가 맛있는 밥을 해 줬어요.
+엄마#1	엄마	mom	엄마한테 전화해 볼게요.
+일#0	일	work; matter; one	오늘은 일이 많아서 바빠요.
+일#1	일	work; matter; one	얼굴이 안 좋네요, 무슨 일 있어요?
+타운#0	타운	town	이 타운은 작고 조용해요.
+타운#1	타운	town	타운 지도를 보면서 걸었어요.
+걸다#0	걸다	to pick (a fight); to hang	모르는 트레이너가 배틀을 걸었어요.
+걸다#1	걸다	to pick (a fight); to hang	옆자리 사람이 나한테 말을 걸었어요.
+그러다#0	그러다	to do so	그러지 마세요, 위험해요.
+그러다#1	그러다	to do so	친구가 같이 가자고 해서 그러기로 했어요.
+데이터#0	데이터	data	데이터를 컴퓨터에 저장했어요.
+데이터#1	데이터	data	휴대폰 데이터가 다 떨어졌어요.
+떨어지다#0	떨어지다	to fall	나무에서 사과가 떨어졌어요.
+떨어지다#1	떨어지다	to fall	컵이 바닥에 떨어져서 깨졌어요.
+사람#0	사람	person	상록시티에는 사람이 많아요.
+사람#1	사람	person	그 사람은 친절한 트레이너예요.
+소포#0	소포	parcel, package	우체국에서 소포를 보냈어요.
+소포#1	소포	parcel, package	할머니한테서 소포가 왔어요.
+시간#0	시간	time	시간이 있으면 같이 놀아요.
+시간#1	시간	time	벌써 저녁 먹을 시간이에요.
+언제나#0	언제나	always	엄마는 언제나 일찍 일어나요.
+언제나#1	언제나	always	피카츄는 언제나 내 옆에 있어요.
+이제#0	이제	now	이제 집에 갈 시간이에요.
+이제#1	이제	now	이제 비가 그쳤어요.
+전혀#0	전혀	not at all	저는 전혀 배고프지 않아요.
+전혀#1	전혀	not at all	그 사람을 전혀 몰라요.
+치료#0	치료	treatment, cure	포켓몬센터에서 포켓몬을 치료했어요.
+치료#1	치료	treatment, cure	병원에서 다리를 치료받았어요.
+힘#0	힘	strength; power	꼬부기는 작지만 힘이 세요.
+힘#1	힘	strength; power	밥을 먹으니까 힘이 나요.
+각지#0	각지	all regions, everywhere	각지에서 트레이너들이 모였어요.
+각지#1	각지	all regions, everywhere	각지의 음식을 먹어 보고 싶어요.
+굉장히#0	굉장히	very, extremely	오늘은 굉장히 더워요.
+굉장히#1	굉장히	very, extremely	이 케이크는 굉장히 맛있어요.
+기록#0	기록	record	매일 일기에 기록을 남겨요.
+기록#1	기록	record	그 선수가 새 기록을 세웠어요.
+나누다#0	나누다	to divide, share	빵을 친구와 반으로 나눴어요.
+나누다#1	나누다	to divide, share	사과를 네 조각으로 나눴어요.
+냄새#0	냄새	smell	부엌에서 좋은 냄새가 나요.
+냄새#1	냄새	smell	이 꽃은 냄새가 정말 좋아요.
+누르다#0	누르다	to press	버튼을 누르면 문이 열려요.
+누르다#1	누르다	to press	초인종을 두 번 눌렀어요.
+달#0	달	moon; month	오늘 밤에는 달이 밝아요.
+달#1	달	moon; month	다음 달에 여행을 가요.
+던지다#0	던지다	to throw	꼬렛에게 몬스터볼을 던졌어요.
+던지다#1	던지다	to throw	공을 최대한 멀리 던져 봐!
+두다#0	두다	to put; leave (as is)	열쇠를 책상 위에 뒀어요.
+두다#1	두다	to put; leave (as is)	그냥 그대로 두세요.
+리포트#0	리포트	report (save file)	쉬기 전에 리포트를 꼭 써요.
+리포트#1	리포트	report (save file)	리포트를 써 두면 마음이 편해요.
+맞다#0	맞다	to be right; be hit	네, 친구 말이 다 맞아요.
+맞다#1	맞다	to be right; be hit	비를 맞아서 옷이 다 젖었어요.
+문#0	문	door	문을 좀 닫아 주세요.
+문#1	문	door	포켓몬센터 문이 열렸어요.
+본부#0	본부	headquarters	회사 본부는 큰 도시에 있어요.
+본부#1	본부	headquarters	본부에서 연락이 왔어요.
+사용#0	사용	use	이 컴퓨터를 사용해도 돼요?
+사용#1	사용	use	배틀 중에 상처약을 사용했어요.
+세계#0	세계	world	세계 여행을 하고 싶어요.
+세계#1	세계	world	세계에는 포켓몬이 아주 많아요.
+승부#0	승부	contest, match	우리 한번 승부를 해 볼까?
+승부#1	승부	contest, match	승부는 끝까지 몰라요.
+아름답다#0	아름답다	to be beautiful	상록숲의 아침은 정말 아름다워요.
+아름답다#1	아름답다	to be beautiful	아름다운 노래를 들었어요.
+약#0	약	medicine; promise	머리가 아파서 약을 먹었어요.
+약#1	약	medicine; promise	이 약은 하루에 세 번 드세요.
+얼다#0	얼다	to freeze	추워서 호수가 꽁꽁 얼었어요.
+얼다#1	얼다	to freeze	밖이 추워서 손이 얼 것 같아요.
+연구소#0	연구소	lab, research center	연구소에서 포켓몬을 연구해요.
+연구소#1	연구소	lab, research center	우리 이모는 연구소에서 일해요.
+우주#0	우주	space, universe	밤하늘을 보면 우주가 궁금해요.
+우주#1	우주	space, universe	언젠가 우주에 가 보고 싶어요.
+위#0	위	top, above	책상 위에 도감이 있어요.
+위#1	위	top, above	산 위에서 보니 마을이 작아요.
+이름#0	이름	name	이 꼬부기 이름은 뭐예요?
+이름#1	이름	name	이름을 크게 불러 주세요.
+일어나다#0	일어나다	to get up; happen	저는 매일 일곱 시에 일어나요.
+일어나다#1	일어나다	to get up; happen	어제 마을에서 무슨 일이 일어났어요?
+잡히다#0	잡히다	to be caught	구구가 드디어 잡혔어요!
+잡히다#1	잡히다	to be caught	물고기가 하나도 안 잡혀요.
+접속#0	접속	connection; login	인터넷에 접속이 안 돼요.
+접속#1	접속	connection; login	컴퓨터에 접속해서 포켓몬을 맡겼어요.
+조심#0	조심	caution, care	길이 미끄러우니까 조심하세요.
+조심#1	조심	caution, care	뜨거우니까 조심해서 마셔요.
+중#0	중	in the middle of	지금 밥 먹는 중이에요.
+중#1	중	in the middle of	배틀 중에는 조용히 해 주세요.
+천천히#0	천천히	slowly	천천히 말해 주세요.
+천천히#1	천천히	slowly	밥을 천천히 먹어요.
+통신#0	통신	communication	산속에서는 통신이 잘 안 돼요.
+통신#1	통신	communication	친구와 통신으로 포켓몬을 교환했어요.
+펼치다#0	펼치다	to spread out	지도를 펼쳐서 길을 찾았어요.
+펼치다#1	펼치다	to spread out	구구가 날개를 활짝 펼쳤어요.
+가르치다#0	가르치다	to teach	형이 나한테 수학을 가르쳐 줬어요.
+가르치다#1	가르치다	to teach	저는 아이들에게 그림을 가르쳐요.
+건드리다#0	건드리다	to touch, mess with	그 상자는 건드리지 마세요.
+건드리다#1	건드리다	to touch, mess with	자는 고양이를 건드리면 화내요.
+게임#0	게임	game	주말에 친구랑 게임을 했어요.
+게임#1	게임	game	이 게임은 규칙이 쉬워요.
+고맙다#0	고맙다	to be thankful	도와줘서 정말 고마워요.
+고맙다#1	고맙다	to be thankful	생일 선물 정말 고맙습니다!
+공#0	공	ball, sphere	공원에서 공을 찼어요.
+공#1	공	ball, sphere	피카츄가 공을 가지고 놀아요.
+공짜#0	공짜	free (of charge)	이 사탕은 공짜예요.
+공짜#1	공짜	free (of charge)	포켓몬센터 치료는 공짜예요.
+귀엽다#0	귀엽다	to be cute	피카츄는 정말 귀여워요!
+귀엽다#1	귀엽다	to be cute	아기 고양이가 너무 귀엽네요.
+그리다#0	그리다	to draw	동생이 꼬부기를 그렸어요.
+그리다#1	그리다	to draw	지도를 직접 그려 봤어요.
+기쁘다#0	기쁘다	to be happy	시험에 붙어서 정말 기뻐요.
+기쁘다#1	기쁘다	to be happy	다시 만나서 기뻐요.
+깨다#0	깨다	to break; to wake	접시를 깨서 엄마한테 혼났어요.
+깨다#1	깨다	to break; to wake	새벽에 잠이 깼어요.
+꽤#0	꽤	quite, fairly	오늘 아침은 꽤 추워요.
+꽤#1	꽤	quite, fairly	상록숲까지 가는 길은 꽤 길어요.
+나아가다#0	나아가다	to advance, go forward	한 걸음씩 앞으로 나아가요.
+나아가다#1	나아가다	to advance, go forward	비가 와도 계속 나아갔어요.
+남기다#0	남기다	to leave behind	밥을 남기지 마세요.
+남기다#1	남기다	to leave behind	친구에게 메모를 남겼어요.
+넓다#0	넓다	to be wide, spacious	우리 학교 운동장은 넓어요.
+넓다#1	넓다	to be wide, spacious	넓은 풀밭에서 뛰어놀았어요.
+녹이다#0	녹이다	to warm, thaw	언 손을 난로에 녹였어요.
+녹이다#1	녹이다	to warm, thaw	햇빛이 눈을 녹였어요.
+늙다#0	늙다	to grow old	우리 개가 많이 늙었어요.
+늙다#1	늙다	to grow old	늙어도 건강하게 살고 싶어요.
+단#0	단	platform, dais	선생님이 단 위에 올라갔어요.
+단#1	단	platform, dais	단 위에서 노래를 불렀어요.
+대하다#0	대하다	about, regarding	포켓몬에 대해 더 알고 싶어요.
+대하다#1	대하다	about, regarding	그 일에 대해 이야기해요.
+데#0	데	place	조용한 데에서 쉬고 싶어요.
+데#1	데	place	아픈 데가 있으면 말해요.
+돌멩이#0	돌멩이	pebble, stone	길에서 예쁜 돌멩이를 주웠어요.
+돌멩이#1	돌멩이	pebble, stone	강에 돌멩이를 던졌어요.
+동생#0	동생	younger sibling	동생은 저보다 세 살 어려요.
+동생#1	동생	younger sibling	동생이랑 같이 학교에 가요.
+드리다#0	드리다	to give (hon.)	할머니께 꽃을 드렸어요.
+드리다#1	드리다	to give (hon.)	선생님께 편지를 드릴게요.
+등록#0	등록	registration	수영 수업에 등록했어요.
+등록#1	등록	registration	도감에 새 포켓몬이 등록됐어요.
+마음#0	마음	heart; mind	친구 마음을 잘 모르겠어요.
+마음#1	마음	heart; mind	이 옷이 마음에 들어요.
+맛있다#0	맛있다	delicious	엄마 김치찌개는 정말 맛있어요.
+맛있다#1	맛있다	delicious	맛있는 거 먹으러 가요!
+머리#0	머리	head	아침부터 머리가 아파요.
+머리#1	머리	head	머리를 짧게 잘랐어요.
+메모#0	메모	memo	중요한 것은 메모해 두세요.
+메모#1	메모	memo	냉장고에 메모가 붙어 있어요.
+모으다#0	모으다	to gather; save	저는 우표를 모아요.
+모으다#1	모으다	to gather; save	돈을 모아서 새 신발을 샀어요.
+목소리#0	목소리	voice	친구 목소리가 작아서 안 들려요.
+목소리#1	목소리	voice	엄마 목소리가 듣고 싶어요.
+박사#0	박사	doctor (PhD)	우리 삼촌은 생물학 박사예요.
+박사#1	박사	doctor (PhD)	박사가 되려면 공부를 많이 해야 해요.
+방송#0	방송	broadcast	텔레비전에서 날씨 방송을 봤어요.
+방송#1	방송	broadcast	라디오 방송이 곧 시작해요.
+변화#0	변화	change	요즘 날씨 변화가 커요.
+변화#1	변화	change	작은 변화가 큰 차이를 만들어요.
+보관#0	보관	storage, keeping	남은 음식은 냉장고에 보관하세요.
+보관#1	보관	storage, keeping	포켓몬을 컴퓨터에 보관했어요.
+부르다#0	부르다	to call	친구 이름을 크게 불렀어요.
+부르다#1	부르다	to call	피카츄를 부르면 바로 와요.
+붙다#0	붙다	to stick	옷에 풀잎이 붙어 있어요.
+붙다#1	붙다	to stick	껌이 신발에 붙었어요.
+뼈#0	뼈	bone	넘어져서 팔 뼈가 부러졌어요.
+뼈#1	뼈	bone	강아지가 뼈를 물고 있어요.
+상처#0	상처	wound	다리에 작은 상처가 났어요.
+상처#1	상처	wound	상처약으로 상처를 치료했어요.
+속#0	속	inside	가방 속에 뭐가 있어요?
+속#1	속	inside	풀숲 속에 캐터피가 숨어 있어요.
+쇼핑#0	쇼핑	shopping	주말에 엄마랑 쇼핑을 했어요.
+쇼핑#1	쇼핑	shopping	상록시티에서 쇼핑하고 싶어요.
+슬슬#0	슬슬	slowly; about time to	이제 슬슬 집에 갈까요?
+슬슬#1	슬슬	slowly; about time to	점심때라서 슬슬 배가 고파요.
+신#0	신	god	옛날 사람들은 산에 신이 산다고 믿었어요.
+신#1	신	god	사람들이 신에게 기도했어요.
+쓰러뜨리다#0	쓰러뜨리다	to knock down	바람이 나무를 쓰러뜨렸어요.
+쓰러뜨리다#1	쓰러뜨리다	to knock down	파이리가 꼬렛을 쓰러뜨렸어요.
+아직#0	아직	still; not yet	아직 숙제를 못 했어요.
+아직#1	아직	still; not yet	아직 일곱 시밖에 안 됐어요.
+애#0	애	kid, child	그 애는 내 친구예요.
+애#1	애	kid, child	애들이 공원에서 놀고 있어요.
+어른#0	어른	adult, elder	어른이 되면 여행을 많이 할 거예요.
+어른#1	어른	adult, elder	동생이 어른스럽게 말했어요.
+언젠가#0	언젠가	someday	언젠가 다시 만나요.
+언젠가#1	언젠가	someday	언젠가 내 집을 갖고 싶어요.
+역할#0	역할	role	연극에서 왕 역할을 맡았어요.
+역할#1	역할	role	각자 자기 역할을 잘해야 해요.
+옛날#0	옛날	old days, long ago	옛날에 이 마을은 아주 작았어요.
+옛날#1	옛날	old days, long ago	할머니가 옛날 이야기를 해 주셨어요.
+완전히#0	완전히	completely	눈이 완전히 녹았어요.
+완전히#1	완전히	completely	숙제를 완전히 잊어버렸어요.
+우선#0	우선	first of all	우선 밥부터 먹어요.
+우선#1	우선	first of all	우선 포켓몬센터에 가자.
+유리#0	유리	advantage (유리하다)	물 타입은 불 타입에 유리해요.
+유리#1	유리	advantage (유리하다)	비가 오면 우리 팀이 유리해요.
+이리#0	이리	this way, here	이리 와서 이것 좀 봐!
+이리#1	이리	this way, here	이리 오세요, 자리가 있어요.
+인기#0	인기	popularity	피카츄는 인기가 정말 많아요.
+인기#1	인기	popularity	이 가게는 요즘 인기가 있어요.
+읽다#0	읽다	to read	자기 전에 책을 읽어요.
+읽다#1	읽다	to read	표지판을 읽고 길을 찾았어요.
+자리#0	자리	seat; place	이 자리에 앉아도 돼요?
+자리#1	자리	seat; place	저는 창가 자리가 좋아요.
+잔뜩#0	잔뜩	a lot, fully	가방에 과자를 잔뜩 넣었어요.
+잔뜩#1	잔뜩	a lot, fully	하늘에 구름이 잔뜩 꼈어요.
+전#0	전	before	밥 먹기 전에 손을 씻어요.
+전#1	전	before	삼 년 전에 이 마을에 왔어요.
+접수처#0	접수처	reception desk	포켓몬센터 접수처에 포켓몬을 맡겼어요.
+접수처#1	접수처	reception desk	병원 접수처에서 이름을 말했어요.
+제법#0	제법	quite, pretty (good)	너 요리 제법 잘하네!
+제법#1	제법	quite, pretty (good)	꼬부기가 제법 강해졌어요.
+조사#0	조사	investigation	경찰이 사고를 조사하고 있어요.
+조사#1	조사	investigation	풀숲에 사는 포켓몬을 조사했어요.
+좋아하다#0	좋아하다	to like	저는 매운 음식을 좋아해요.
+좋아하다#1	좋아하다	to like	이상해씨는 햇빛을 좋아해요.
+즐겁다#0	즐겁다	to be pleasant	친구랑 노는 게 즐거워요.
+즐겁다#1	즐겁다	to be pleasant	즐거운 주말 보내세요!
+지금#0	지금	now	미안한데, 지금 몇 시예요?
+지금#1	지금	now	기다려, 지금 바로 갈게요.
+직접#0	직접	directly; in person	이 케이크는 제가 직접 만들었어요.
+직접#1	직접	directly; in person	궁금하면 직접 와서 보세요.
+차#0	차	car; tea	아빠가 차를 운전해요.
+차#1	차	car; tea	따뜻한 차 한 잔 마실래요?
+처음#0	처음	first time	포켓몬을 처음 잡은 날이 기억나요.
+처음#1	처음	first time	한국에 온 건 처음이에요.
+캐터피#0	캐터피	Caterpie	캐터피는 초록색 벌레 포켓몬이에요.
+캐터피#1	캐터피	Caterpie	상록숲에서 캐터피를 자주 봐요.
+타입#0	타입	type	꼬부기는 물 타입이에요.
+타입#1	타입	type	상대 타입을 잘 보고 싸워요.
+특별히#0	특별히	especially	오늘은 특별히 일찍 일어났어요.
+특별히#1	특별히	especially	특별히 먹고 싶은 거 있어요?
+포인트#0	포인트	point	이 카드로 포인트를 모아요.
+포인트#1	포인트	point	이 문제의 포인트는 뭐예요?
+풀숲#0	풀숲	tall grass	풀숲에 들어가면 포켓몬이 나와요.
+풀숲#1	풀숲	tall grass	풀숲에서 꼬렛이 튀어나왔어요.
+하늘#0	하늘	sky	오늘 하늘이 정말 맑아요.
+하늘#1	하늘	sky	구구가 하늘을 날고 있어요.
+해#0	해	sun; year	해가 지면 집에 가요.
+해#1	해	sun; year	새해 복 많이 받으세요!
+호박#0	호박	amber	호박으로 만든 목걸이를 샀어요.
+호박#1	호박	amber	호박은 노랗고 반짝이는 돌이에요.
+힘들다#0	힘들다	to be hard	오늘 일이 너무 힘들었어요.
+힘들다#1	힘들다	to be hard	산에 오르는 게 힘들어요.
+근처#0	근처	nearby	이 근처에 편의점 있어요?
+근처#1	근처	nearby	집 근처에 공원이 있어요.
+다르다#0	다르다	to be different	형이랑 저는 성격이 달라요.
+다르다#1	다르다	to be different	포켓몬마다 좋아하는 음식이 달라요.
+마#0	마	horse, 馬 (only in 날쌩마; 무우마 and 마기라스 use unrelated 마 morphemes)	아이가 공원에서 목마를 탔어요.
+마#1	마	horse, 馬 (only in 날쌩마; 무우마 and 마기라스 use unrelated 마 morphemes)	옛날에는 마차를 타고 다녔어요.
+바꾸다#0	바꾸다	to change; trade	옷을 다른 색으로 바꿨어요.
+바꾸다#1	바꾸다	to change; trade	친구랑 포켓몬을 바꿨어요.
+아무래도#0	아무래도	it seems, after all	아무래도 비가 올 것 같아요.
+아무래도#1	아무래도	it seems, after all	아무래도 길을 잃은 것 같아요.
+전단지#0	전단지	flyer	길에서 전단지를 받았어요.
+전단지#1	전단지	flyer	가게 앞에 전단지를 붙였어요.
+턱#0	턱	chin, jaw	넘어져서 턱을 다쳤어요.
+턱#1	턱	chin, jaw	턱에 밥알이 붙었어요.
+또#0	또	again	오늘 즐거웠어요, 또 만나요!
+또#1	또	again	약속 시간인데 너 또 늦었어?
+클럽#0	클럽	club	저는 수영 클럽에 다녀요.
+클럽#1	클럽	club	클럽 사람들과 저녁을 먹었어요.
+선택#0	선택	choice	어떤 포켓몬을 선택할까요?
+선택#1	선택	choice	선택은 너한테 맡길게.
+다시#0	다시	again	다시 한 번 말해 주세요.
+다시#1	다시	again	오늘은 바빠서 내일 다시 올게요.
+반바지#0	반바지	shorts	여름에는 반바지를 입어요.
+반바지#1	반바지	shorts	반바지 입은 아이가 뛰어가요.
+지니다#0	지니다	to carry, have	포켓몬에게 열매를 지니게 했어요.
+지니다#1	지니다	to carry, have	할머니 사진을 늘 지니고 다녀요.
+리더#0	리더	leader	우리 팀 리더는 정말 친절해요.
+리더#1	리더	leader	리더가 되는 건 쉽지 않아요.
+배우다#0	배우다	to learn	요즘 기타를 배워요.
+배우다#1	배우다	to learn	학교에서 한국 역사를 배웠어요.
+저널#0	저널	journal	이 과학 저널은 한 달에 한 번 나와요.
+저널#1	저널	journal	저널에서 포켓몬 기사를 읽었어요.
+괜찮다#0	괜찮다	to be okay	넘어졌는데 괜찮아요?
+괜찮다#1	괜찮다	to be okay	내일 만나도 괜찮아요.
+단어#0	단어	word	새 단어를 다섯 개 외웠어요.
+단어#1	단어	word	이 단어는 무슨 뜻이에요?
+비밀#0	비밀	secret	이건 우리만의 비밀이야.
+비밀#1	비밀	secret	비밀을 꼭 지켜 줄게요.
+오른쪽#0	오른쪽	right side	오른쪽으로 가면 상록시티예요.
+오른쪽#1	오른쪽	right side	오른쪽 다리가 아파요.
+잠시#0	잠시	a moment	잠시만 기다려 주세요.
+잠시#1	잠시	a moment	다리가 아프니까 잠시 쉬었다 가요.
+종료#0	종료	end	게임을 종료하기 전에 저장하세요.
+종료#1	종료	end	행사가 다섯 시에 종료됩니다.
+콘테스트#0	콘테스트	contest	노래 콘테스트에 나갔어요.
+콘테스트#1	콘테스트	contest	포켓몬 사진 콘테스트가 열려요.
+기분파#0	기분파	moody person; Forecast (ability)	우리 형은 완전 기분파예요.
+기분파#1	기분파	moody person; Forecast (ability)	기분파 친구랑 놀면 좀 피곤해요.
+남자#0	남자	man, male	저 남자는 트레이너예요.
+남자#1	남자	man, male	남자 화장실은 오른쪽에 있어요.
+느낌#0	느낌	feeling	오늘은 좋은 일이 생길 느낌이에요.
+느낌#1	느낌	feeling	이 옷은 부드러운 느낌이 나요.
+데려오다#0	데려오다	to bring along	친구를 집에 데려와도 돼요?
+데려오다#1	데려오다	to bring along	피카츄를 공원에 데려왔어요.
+뜨다#0	뜨다	to float; to rise	아침이 되면 동쪽에서 해가 떠요.
+뜨다#1	뜨다	to float; to rise	하늘에 풍선이 떠 있어요.
+만나다#0	만나다	to meet	내일 친구를 만나요.
+만나다#1	만나다	to meet	1번 도로에서 꼬렛을 만났어요.
+멀다#0	멀다	far	집에서 학교까지 멀어요.
+멀다#1	멀다	far	상록시티는 아직 멀었어요?
+몸#0	몸	body	몸이 안 좋아서 쉬었어요.
+몸#1	몸	body	꼬부기는 몸이 단단해요.
+발견#0	발견	discovery	숲에서 새 꽃을 발견했어요.
+발견#1	발견	discovery	그 발견은 정말 놀라웠어요.
+벌레#0	벌레	bug; insect	방에 벌레가 들어왔어요!
+벌레#1	벌레	bug; insect	캐터피는 벌레 포켓몬이에요.
+빠지다#0	빠지다	to fall in	공이 연못에 빠졌어요.
+빠지다#1	빠지다	to fall in	길에서 구멍에 빠질 뻔했어요.
+사양#0	사양	declining politely	사양하지 말고 많이 드세요.
+사양#1	사양	declining politely	선물을 줬는데 친구가 사양했어요.
+손녀#0	손녀	granddaughter	할머니는 손녀를 아주 사랑해요.
+손녀#1	손녀	granddaughter	손녀가 할아버지께 편지를 썼어요.
+실력#0	실력	skill, ability	배틀 실력이 많이 늘었어요.
+실력#1	실력	skill, ability	그 친구는 피아노 실력이 좋아요.
+어쩌다#0	어쩌다	to do (어쩔 수 없다 = no choice)	비가 와서 어쩔 수 없이 집에 있었어요.
+어쩌다#1	어쩌다	to do (어쩔 수 없다 = no choice)	늦었지만 어쩔 수 없어요.
+에러#0	에러	error	컴퓨터에 에러가 났어요.
+에러#1	에러	error	에러 때문에 저장을 못 했어요.
+오#0	오	oh!	오, 네 꼬부기 정말 멋지다!
+오#1	오	oh!	오, 저기 풀숲에 피카츄다!
+웃다#0	웃다	to laugh, smile	아기가 나를 보고 웃었어요.
+웃다#1	웃다	to laugh, smile	그 이야기를 듣고 크게 웃었어요.
+전송#0	전송	transfer	사진을 친구에게 전송했어요.
+전송#1	전송	transfer	파일 전송이 끝났어요.
+좀처럼#0	좀처럼	rarely, hardly	이 문제는 좀처럼 안 풀려요.
+좀처럼#1	좀처럼	rarely, hardly	피카츄는 좀처럼 보기 어려워요.
+최근#0	최근	recently	최근에 운동을 시작했어요.
+최근#1	최근	recently	최근 날씨가 많이 추워요.
+친하다#0	친하다	to be close, friendly	저는 그 친구랑 아주 친해요.
+친하다#1	친하다	to be close, friendly	꼬부기와 금방 친해졌어요.
+타다#0	타다	to ride; burn	버스를 타고 학교에 가요.
+타다#1	타다	to ride; burn	고기가 다 타 버렸어요.
+확인#0	확인	check	문이 잠겼는지 확인해 주세요.
+확인#1	확인	check	가방을 다시 확인했어요.
+후#0	후	after; later	수업이 끝난 후에 만나요.
+후#1	후	after; later	한 시간 후에 출발해요.
+동굴#0	동굴	cave	동굴 안은 어둡고 추워요.
+동굴#1	동굴	cave	동굴에서 이상한 소리가 나요.
+붙이다#0	붙이다	to attach	벽에 사진을 붙였어요.
+붙이다#1	붙이다	to attach	상처에 밴드를 붙였어요.
+작다#0	작다	to be small	꼬렛은 몸이 작아요.
+작다#1	작다	to be small	이 신발은 좀 작아요.
+거절#0	거절	refusal	친구의 부탁을 거절했어요.
+거절#1	거절	refusal	배틀 신청을 거절해도 돼요?
+용돈#0	용돈	pocket money	할머니께 용돈을 받았어요.
+용돈#1	용돈	pocket money	용돈으로 상처약을 샀어요.
+달리다#0	달리다	to hang, be attached	나무에 열매가 많이 달려 있어요.
+달리다#1	달리다	to hang, be attached	가방에 작은 인형이 달려 있어요.
+갈다#0	갈다	to change, replace	전구를 새것으로 갈았어요.
+갈다#1	갈다	to change, replace	침대 이불을 새로 갈았어요.
+다행#0	다행	relief, luckily	아무도 안 다쳐서 다행이에요.
+다행#1	다행	relief, luckily	비가 그쳐서 정말 다행이다!
+신다#0	신다	to wear (shoes)	새 운동화를 신었어요.
+신다#1	신다	to wear (shoes)	추우니까 양말을 신어요.
+자라다#0	자라다	to grow	아이가 키가 많이 자랐어요.
+자라다#1	자라다	to grow	이 나무는 천천히 자라요.
+하다#0	하다	to do	매일 아침에 운동을 해요.
+하다#1	하다	to do	오늘은 숙제를 다 했어?
+오박사#0	오박사	Professor Oak — Pokémon professor	오박사는 포켓몬을 연구하는 박사예요.
+오박사#1	오박사	Professor Oak — Pokémon professor	오박사님 연구소는 태초마을에 있어요.
+되다#0	되다	to become	저는 커서 선생님이 되고 싶어요.
+되다#1	되다	to become	얼음이 녹아서 물이 됐어요.
+안#0	안	not; inside	오늘은 비가 안 와요.
+안#1	안	not; inside	가방 안에 상처약이 있어요.
+가다#0	가다	to go	내일 상록시티에 가요.
+가다#1	가다	to go	같이 포켓몬센터에 갈래?
+없다#0	없다	to not exist, lack	지갑에 돈이 하나도 없어요.
+없다#1	없다	to not exist, lack	이 길에는 사람이 없네요.
+배틀#0	배틀	battle	친구랑 포켓몬 배틀을 했어요.
+배틀#1	배틀	battle	배틀 전에 상처약을 꼭 챙겨요.
+같다#0	같다	to be the same	우리 둘은 나이가 같아요.
+같다#1	같다	to be the same	형이랑 같은 옷을 샀어요.
+강하다#0	강하다	to be strong	오늘은 바람이 정말 강해요.
+강하다#1	강하다	to be strong	강한 트레이너가 되고 싶어요.
+보이다#0	보이다	to be seen	창문 밖으로 바다가 보여요.
+보이다#1	보이다	to be seen	안경을 쓰니까 잘 보여요.
+잘#0	잘	well	어젯밤에 잘 잤어요?
+잘#1	잘	well	그 친구는 노래를 잘 불러요.
+듣다#0	듣다	to listen, hear	저는 음악을 자주 들어요.
+듣다#1	듣다	to listen, hear	선생님 말씀을 잘 들었어요.
+말#0	말	word; horse	천천히 말해 주세요.
+말#1	말	word; horse	농장에서 하얀 말을 봤어요.
+물건#0	물건	thing; item	이 가게에는 물건이 많아요.
+물건#1	물건	thing; item	잃어버린 물건을 찾았어요.
+잠깐#0	잠깐	a moment	잠깐만 기다려 주세요.
+잠깐#1	잠깐	a moment	잠깐 쉬었다가 갈까요?
+키우다#0	키우다	to raise; grow	저는 집에서 고양이를 키워요.
+키우다#1	키우다	to raise; grow	꼬부기를 정성껏 키우고 있어요.
+기다리다#0	기다리다	to wait	버스를 십 분 동안 기다렸어요.
+기다리다#1	기다리다	to wait	친구를 기다리고 있어요.
+넘치다#0	넘치다	to overflow, be full of	컵에 물이 넘쳤어요.
+넘치다#1	넘치다	to overflow, be full of	그 아이는 힘이 넘쳐요.
+때#0	때	time, when	어릴 때 이 마을에 살았어요.
+때#1	때	time, when	밥 먹을 때 텔레비전을 안 봐요.
+알다#0	알다	to know	그 사람 이름을 알아요?
+알다#1	알다	to know	길을 잘 아는 친구가 있어요.
+회색#0	회색	gray	하늘이 회색이라서 비가 올 것 같아요.
+회색#1	회색	gray	회색 모자를 하나 샀어요.
+남#0	남	others	남의 물건을 함부로 만지면 안 돼요.
+남#1	남	others	남의 말을 너무 믿지 마.
+마리#0	마리	counter (animals)	숲에서 구구 두 마리를 봤어요.
+마리#1	마리	counter (animals)	우리 집에는 고양이가 한 마리 있어요.
+버리다#0	버리다	to throw away	쓰레기는 쓰레기통에 버려요.
+버리다#1	버리다	to throw away	케이크를 혼자 다 먹어 버렸어요.
+색#0	색	color	무슨 색을 좋아해요?
+색#1	색	color	이 꽃은 색이 참 예뻐요.
+와#0	와	wow	와, 바다가 정말 넓다!
+와#1	와	wow	와, 이 케이크 맛있어요!
+줄#0	줄	rope; line	가게 앞에 줄이 길어요.
+줄#1	줄	rope; line	줄을 꽉 잡고 올라가세요.
+갖다#0	갖다	to take; to have	목마른데 물 좀 갖다줄래?
+갖다#1	갖다	to take; to have	우산을 갖고 나가세요.
+계시다#0	계시다	to be (honorific)	할머니는 지금 방에 계세요.
+계시다#1	계시다	to be (honorific)	선생님, 내일 학교에 계세요?
+나가다#0	나가다	to go out	날씨가 좋아서 밖에 나갔어요.
+나가다#1	나가다	to go out	잠깐 편의점에 나갔다 올게요.
+도움#0	도움	help	친구의 도움을 받았어요.
+도움#1	도움	help	도움이 필요하면 말해 주세요.
+바로#0	바로	right away	집에 오자마자 바로 잤어요.
+바로#1	바로	right away	포켓몬센터는 바로 옆에 있어요.
+상대#0	상대	opponent, partner	배틀 상대가 아주 강했어요.
+상대#1	상대	opponent, partner	이야기 상대가 있어서 좋아요.
+쉬다#0	쉬다	to breathe; to rest	천천히 숨을 쉬어 보세요.
+쉬다#1	쉬다	to breathe; to rest	피곤하면 좀 쉬어요.
+싶다#0	싶다	to want to	시원한 물을 마시고 싶어요.
+싶다#1	싶다	to want to	나도 여행 가고 싶다.
+여행#0	여행	travel, trip	방학에 가족 여행을 갔어요.
+여행#1	여행	travel, trip	포켓몬과 같이 여행하고 싶어요.
+적다#0	적다	to be few; to write	이번 달은 비가 적게 왔어요.
+적다#1	적다	to be few; to write	전화번호를 노트에 적었어요.
+짐#0	짐	luggage	짐이 너무 무거워요.
+짐#1	짐	luggage	여행 가기 전에 짐을 쌌어요.
+치료제#0	치료제	remedy, cure	이 치료제는 상처에 발라요.
+치료제#1	치료제	remedy, cure	감기 치료제를 사러 갔어요.
+가방#0	가방	bag	가방에 몬스터볼을 넣었어요.
+가방#1	가방	bag	새 가방이 아주 가벼워요.
+게시판#0	게시판	bulletin board	학교 게시판에 공지가 붙어 있어요.
+게시판#1	게시판	bulletin board	게시판을 보고 길을 찾았어요.
+그림#0	그림	picture, drawing	동생이 고양이 그림을 그렸어요.
+그림#1	그림	picture, drawing	벽에 예쁜 그림이 걸려 있어요.
+꼬부기#0	꼬부기	Squirtle	꼬부기는 등에 둥근 껍질이 있어요.
+꼬부기#1	꼬부기	Squirtle	꼬부기는 물을 좋아하는 포켓몬이에요.
+남다#0	남다	to remain, stay	밥이 조금 남았어요.
+남다#1	남다	to remain, stay	수업 끝나고 교실에 남았어요.
+노트#0	노트	notebook, notes	수업 내용을 노트에 썼어요.
+노트#1	노트	notebook, notes	새 노트를 두 권 샀어요.
+늘리다#0	늘리다	to increase (something)	운동 시간을 조금 늘렸어요.
+늘리다#1	늘리다	to increase (something)	포켓몬 수를 늘리고 싶어요.
+달다#0	달다	to be sweet	이 사과는 정말 달아요.
+달다#1	달다	to be sweet	단 음식을 너무 많이 먹었어요.
+도망#0	도망	running away	고양이를 보고 쥐가 도망갔어요.
+도망#1	도망	running away	배틀이 힘들어서 도망을 쳤어요.
+들이다#0	들이다	to let in	추워서 강아지를 집에 들였어요.
+들이다#1	들이다	to let in	손님을 방 안으로 들였어요.
+마비#0	마비	paralysis	다리가 마비돼서 못 걸어요.
+마비#1	마비	paralysis	마비가 풀리면 다시 움직여요.
+메뉴#0	메뉴	menu	오늘 점심 메뉴는 뭐예요?
+메뉴#1	메뉴	menu	이 식당은 메뉴가 많아요.
+물#0	물	water	목이 말라서 물을 마셨어요.
+물#1	물	water	꽃에 물을 줘야 해요.
+부족#0	부족	shortage, lack	요즘 잠이 부족해요.
+부족#1	부족	shortage, lack	돈이 부족해서 못 샀어요.
+살다#0	살다	to live	저는 태초마을에 살아요.
+살다#1	살다	to live	물고기는 물에서 살아요.
+세상#0	세상	the world	세상에는 포켓몬이 아주 많아요.
+세상#1	세상	the world	세상에서 엄마가 제일 좋아요.
+시스템#0	시스템	system	이 컴퓨터 시스템은 아주 빨라요.
+시스템#1	시스템	system	학교 시스템이 새로 바뀌었어요.
+아빠#0	아빠	dad	아빠가 저녁을 만들어 주셨어요.
+아빠#1	아빠	dad	아빠, 오늘 일찍 와요?
+약하다#0	약하다	to be weak, mild	불이 약해서 물이 안 끓어요.
+약하다#1	약하다	to be weak, mild	이 포켓몬은 물에 약해요.
+엄청#0	엄청	really, hugely	오늘 아침은 엄청 추워요.
+엄청#1	엄청	really, hugely	그 영화 엄청 재미있었어.
+예쁘다#0	예쁘다	to be pretty	이 꽃이 정말 예뻐요.
+예쁘다#1	예쁘다	to be pretty	예쁜 옷을 입고 나갔어요.
+움직이다#0	움직이다	to move	추워서 몸이 잘 안 움직여요.
+움직이다#1	움직이다	to move	풀숲에서 뭔가 움직였어요.
+위하다#0	위하다	for (the sake of)	가족을 위해서 요리를 했어요.
+위하다#1	위하다	for (the sake of)	건강을 위해 매일 걸어요.
+이상해씨#0	이상해씨	Bulbasaur	이상해씨 등에는 큰 씨앗이 있어요.
+이상해씨#1	이상해씨	Bulbasaur	이상해씨는 햇빛을 좋아해요.
+자신#0	자신	confidence	이번 시험은 자신이 있어요.
+자신#1	자신	confidence	배틀에 자신이 없어요.
+장소#0	장소	place	약속 장소가 어디예요?
+장소#1	장소	place	여기는 쉬기 좋은 장소예요.
+정말#0	정말	really	도와줘서 정말 고마워요.
+정말#1	정말	really	이거 정말 네가 만들었어?
+좀#0	좀	a little; please	죄송한데 물 좀 주세요.
+좀#1	좀	a little; please	오늘은 좀 피곤해요.
+지치다#0	지치다	to be exhausted	오래 걸어서 지쳤어요.
+지치다#1	지치다	to be exhausted	지친 포켓몬을 쉬게 해 줬어요.
+치다#0	치다	worth of; to hit	야구 방망이로 공을 세게 쳤어요.
+치다#1	치다	worth of; to hit	아이가 문을 쾅 쳤어요.
+파이리#0	파이리	Charmander	파이리 꼬리에는 불꽃이 있어요.
+파이리#1	파이리	Charmander	파이리는 주황색 포켓몬이에요.
+피카츄#0	피카츄	Pikachu — Pokémon	피카츄는 노란 전기 쥐예요.
+피카츄#1	피카츄	Pikachu — Pokémon	피카츄 볼이 빨개서 귀여워요.
+간판#0	간판	signboard	가게 간판이 아주 커요.
+간판#1	간판	signboard	간판을 보고 식당을 찾았어요.
+걷다#0	걷다	to walk	매일 공원을 걸어요.
+걷다#1	걷다	to walk	1번 도로를 천천히 걸었어요.
+경비원#0	경비원	security guard	경비원이 문 앞에 서 있어요.
+경비원#1	경비원	security guard	경비원 아저씨가 길을 알려 줬어요.
+고프다#0	고프다	to be hungry	아침을 안 먹어서 배가 고파요.
+고프다#1	고프다	to be hungry	배고프면 이 빵 먹어.
+공격#0	공격	attack	상대가 먼저 공격했어요.
+공격#1	공격	attack	공격보다 방어가 중요해요.
+과학#0	과학	science	저는 과학 시간이 제일 좋아요.
+과학#1	과학	science	과학 책을 빌렸어요.
+그냥#0	그냥	just, simply	그냥 집에 있고 싶어요.
+그냥#1	그냥	just, simply	이유 없이 그냥 웃었어요.
+기르다#0	기르다	to raise	할머니는 닭을 기르세요.
+기르다#1	기르다	to raise	화분에 꽃을 기르고 있어요.
+길#0	길	road, way, path	이 길로 가면 상록시티예요.
+길#1	길	road, way, path	길을 잃어서 지도를 봤어요.
+꺼내다#0	꺼내다	to take out	가방에서 몬스터볼을 꺼냈어요.
+꺼내다#1	꺼내다	to take out	냉장고에서 우유를 꺼내 주세요.
+꿈꾸다#0	꿈꾸다	to dream	저는 가수를 꿈꿔요.
+꿈꾸다#1	꿈꾸다	to dream	최고의 트레이너를 꿈꾸고 있어요.
+날#0	날	day	오늘은 날이 정말 좋아요.
+날#1	날	day	그날은 비가 많이 왔어요.
+낫다#0	낫다	to heal, recover	감기가 다 나았어요.
+낫다#1	낫다	to heal, recover	상처가 빨리 나으면 좋겠어요.
+넣다#0	넣다	to put in	가방에 상처약을 넣었어요.
+넣다#1	넣다	to put in	커피에 설탕을 넣어요?
+놓이다#0	놓이다	to be placed	책상 위에 책이 놓여 있어요.
+놓이다#1	놓이다	to be placed	문 앞에 상자가 놓여 있었어요.
+다#0	다	all, everything, entirely	오늘 숙제를 벌써 다 했어요.
+다#1	다	all, everything, entirely	친구들이 다 왔어요?
+단단#0	단단	hard, solid	이 사탕은 너무 단단해요.
+단단#1	단단	hard, solid	신발 끈을 단단히 묶었어요.
+더욱#0	더욱	even more	비가 오니까 더욱 추워요.
+더욱#1	더욱	even more	앞으로 더욱 열심히 할게요.
+데리다#0	데리다	to bring (someone)	동생을 데리고 공원에 갔어요.
+데리다#1	데리다	to bring (someone)	친구를 집에 데려왔어요.
+돌아오다#0	돌아오다	to come back	아빠가 일곱 시에 돌아와요.
+돌아오다#1	돌아오다	to come back	여행에서 어제 돌아왔어요.
+동안#0	동안	during, for	방학 동안 할머니 집에 있었어요.
+동안#1	동안	during, for	한 시간 동안 걸었어요.
+들리다#0	들리다	to be heard	밖에서 새소리가 들려요.
+들리다#1	들리다	to be heard	잘 안 들려요, 다시 말해 주세요.
+떨어뜨리다#0	떨어뜨리다	to drop	컵을 떨어뜨려서 깨졌어요.
+떨어뜨리다#1	떨어뜨리다	to drop	길에서 지갑을 떨어뜨렸어요.
+마음껏#0	마음껏	to one's heart's content	오늘은 마음껏 먹어도 돼요.
+마음껏#1	마음껏	to one's heart's content	공원에서 마음껏 뛰어 놀았어요.
+맡다#0	맡다	to take charge	이 일은 제가 맡을게요.
+맡다#1	맡다	to take charge	빵 냄새를 맡으니까 배고파요.
+머신#0	머신	TM, machine	카페에 커피 머신이 있어요.
+머신#1	머신	TM, machine	이 게임 머신은 아주 오래됐어요.
+메일#0	메일	mail	선생님께 메일을 보냈어요.
+메일#1	메일	mail	아침마다 메일을 확인해요.
+모이다#0	모이다	to gather	친구들이 공원에 모였어요.
+모이다#1	모이다	to gather	돈이 조금씩 모이고 있어요.
+목표#0	목표	target; goal	올해 목표는 운동이에요.
+목표#1	목표	target; goal	목표를 정하고 열심히 해요.
+밖#0	밖	outside	밖에 비가 많이 와요.
+밖#1	밖	outside	밖에서 놀고 싶어요.
+배#0	배	ship; pear; belly	점심을 많이 먹어서 배가 불러요.
+배#1	배	ship; pear; belly	이 배는 정말 달고 시원해요.
+별로#0	별로	not really	오늘은 별로 안 추워요.
+별로#1	별로	not really	그 영화는 별로였어요.
+보내다#0	보내다	to send	엄마한테 사진을 보냈어요.
+보내다#1	보내다	to send	친구에게 편지를 보낼 거예요.
+불꽃#0	불꽃	spark, flame	불꽃이 하늘로 튀었어요.
+불꽃#1	불꽃	spark, flame	파이리 꼬리의 불꽃이 밝아요.
+빛나다#0	빛나다	to shine	밤하늘에 별이 빛나요.
+빛나다#1	빛나다	to shine	새 신발이 반짝반짝 빛나요.
+뿔충이#0	뿔충이	Weedle	뿔충이 머리에는 뾰족한 뿔이 있어요.
+뿔충이#1	뿔충이	Weedle	상록숲에서 뿔충이를 봤어요.
+서다#0	서다	to stand	버스에서 계속 서 있었어요.
+서다#1	서다	to stand	문 앞에 누가 서 있어요.
+손님#0	손님	guest	오늘 가게에 손님이 많아요.
+손님#1	손님	guest	주말에 손님이 와요.
+술#0	술	alcohol	아빠는 술을 안 마셔요.
+술#1	술	alcohol	어린이는 술을 마시면 안 돼요.
+시작#0	시작	start	수업이 아홉 시에 시작해요.
+시작#1	시작	start	오늘부터 여행을 시작해요.
+신경#0	신경	nerve	손가락 신경을 다쳤어요.
+신경#1	신경	nerve	그런 말은 신경 쓰지 마.
+아무것#0	아무것	anything; nothing	냉장고에 아무것도 없어요.
+아무것#1	아무것	anything; nothing	아무것이나 괜찮아요.
+안녕#0	안녕	hi; bye	안녕, 내일 학교에서 또 만나!
+안녕#1	안녕	hi; bye	안녕, 오늘 기분 어때?
+얘기#0	얘기	talk, story	친구랑 오래 얘기했어요.
+얘기#1	얘기	talk, story	재미있는 얘기 좀 해 줘.
+어린애#0	어린애	little child	어린애처럼 울지 마.
+어린애#1	어린애	little child	공원에 어린애들이 많아요.
+얻다#0	얻다	to obtain, get	가게에서 사탕을 얻었어요.
+얻다#1	얻다	to obtain, get	좋은 정보를 얻었어요.
+연구#0	연구	research	포켓몬을 연구하고 싶어요.
+연구#1	연구	research	대학에서 식물을 연구해요.
+온#0	온	whole	온 가족이 같이 저녁을 먹었어요.
+온#1	온	whole	온 마을이 눈으로 하얘요.
+요리#0	요리	cooking	저는 요리를 좋아해요.
+요리#1	요리	cooking	아빠가 맛있는 요리를 했어요.
+월#0	월	month	제 생일은 오 월이에요.
+월#1	월	month	다음 월요일에 시험이 있어요.
+의지#0	의지	will, determination	그 친구는 의지가 강해요.
+의지#1	의지	will, determination	살을 빼려면 의지가 필요해요.
+이미#0	이미	already	기차가 이미 떠났어요.
+이미#1	이미	already	그 책은 이미 읽었어요.
+인정#0	인정	recognition; certified	친구가 제 실수를 인정했어요.
+인정#1	인정	recognition; certified	실력을 인정받아서 기뻐요.
+입다#0	입다	to wear	오늘은 따뜻한 옷을 입어요.
+입다#1	입다	to wear	새 셔츠를 입어 봤어요.
+자주#0	자주	often	저는 자주 산책을 해요.
+자주#1	자주	often	이 카페에 자주 와요?
+잠#0	잠	sleep	어제 잠을 잘 못 잤어요.
+잠#1	잠	sleep	잠이 와서 일찍 누웠어요.
+전원#0	전원	power (on/off)	컴퓨터 전원을 켜 주세요.
+전원#1	전원	power (on/off)	나갈 때 전원을 꼭 꺼요.
+정#0	정	really	정 힘들면 내일 해도 돼요.
+정#1	정	really	정 싫으면 안 가도 돼.
+제일#0	제일	the most; first	저는 여름이 제일 좋아요.
+제일#1	제일	the most; first	우리 반에서 제일 키가 커요.
+조수#0	조수	assistant	연구소 조수는 늘 바빠요.
+조수#1	조수	assistant	저는 박사님의 조수가 되고 싶어요.
+줄다#0	줄다	to decrease	요즘 손님이 많이 줄었어요.
+줄다#1	줄다	to decrease	상처약이 하나씩 줄어요.
+즐기다#0	즐기다	to enjoy	주말에 여행을 즐겨요.
+즐기다#1	즐기다	to enjoy	포켓몬 배틀을 즐기고 있어요.
+지도#0	지도	map	지도를 보고 길을 찾았어요.
+지도#1	지도	map	이 지도에는 상록숲이 있어요.
+질#0	질	quality	이 옷은 질이 좋아요.
+질#1	질	quality	싸지만 질이 별로예요.
+차다#0	차다	to be cold; to kick	겨울 바람이 정말 차요.
+차다#1	차다	to be cold; to kick	아이가 공을 멀리 찼어요.
+컴퓨터#0	컴퓨터	computer	컴퓨터로 숙제를 했어요.
+컴퓨터#1	컴퓨터	computer	포켓몬센터에 컴퓨터가 있어요.
+튀다#0	튀다	to spatter; spark	기름이 튀어서 뜨거웠어요.
+튀다#1	튀다	to spatter; spark	차가 지나가서 물이 튀었어요.
+파워#0	파워	power	이 포켓몬은 파워가 대단해요.
+파워#1	파워	power	아침을 먹으니까 파워가 생겨요.
+푸르다#0	푸르다	to be blue-green	하늘이 정말 푸르러요.
+푸르다#1	푸르다	to be blue-green	푸른 숲을 걸었어요.
+플래시#0	플래시	Flash	사진을 찍을 때 플래시가 터졌어요.
+플래시#1	플래시	Flash	어두워서 휴대폰 플래시를 켰어요.
+하얗다#0	하얗다	to be white	눈이 와서 길이 하얘요.
+하얗다#1	하얗다	to be white	하얀 구름이 예뻐요.
+허리#0	허리	waist, back	오래 앉아서 허리가 아파요.
+허리#1	허리	waist, back	허리를 펴고 앉으세요.
+혹시#0	혹시	by any chance	혹시 오늘 저녁에 시간 있어요?
+혹시#1	혹시	by any chance	혹시 포켓몬센터가 어디인지 알아요?
+도로#0	도로	road	도로에 차가 많아요.
+도로#1	도로	road	1번 도로에는 풀숲이 있어요.
+내리다#0	내리다	to drop off, get off	다음 역에서 내려요.
+내리다#1	내리다	to drop off, get off	비가 많이 내렸어요.
+돌아가다#0	돌아가다	to go back	이제 집에 돌아가요.
+돌아가다#1	돌아가다	to go back	왔던 길로 돌아갔어요.
+많다#0	많다	many; much	오늘은 숙제가 많아요.
+많다#1	많다	many; much	상록숲에는 벌레 포켓몬이 많아요.
+방법#0	방법	way; method	좋은 방법이 있어요?
+방법#1	방법	way; method	포켓몬을 잡는 방법을 배웠어요.
+아저씨#0	아저씨	mister, middle-aged man	가게 아저씨가 친절해요.
+아저씨#1	아저씨	mister, middle-aged man	아저씨, 이거 얼마예요?
+주의#0	주의	caution, attention	길을 건널 때 주의하세요.
+주의#1	주의	caution, attention	선생님 말씀에 주의를 기울였어요.
+포켓#0	포켓	pocket	바지 포켓에 열쇠를 넣었어요.
+포켓#1	포켓	pocket	포켓에서 사탕을 꺼냈어요.
+교환#0	교환	exchange	친구랑 포켓몬을 교환했어요.
+교환#1	교환	exchange	이 옷을 다른 색으로 교환하고 싶어요.
+유니언#0	유니언	union	유니언룸에서 친구를 만났어요.
+유니언#1	유니언	union	유니언룸은 포켓몬센터 이 층에 있어요.
+그룹#0	그룹	group	우리는 네 명이 한 그룹이에요.
+그룹#1	그룹	group	그룹으로 숙제를 했어요.
+대전#0	대전	battle, match	친구와 포켓몬 대전을 했어요.
+대전#1	대전	battle, match	이번 대전은 내가 이겼어!
+설명#0	설명	explanation	선생님 설명이 쉬웠어요.
+설명#1	설명	explanation	길을 다시 설명해 주세요.
+프로필#0	프로필	profile	프로필 사진을 바꿨어요.
+프로필#1	프로필	profile	트레이너 프로필에 이름을 썼어요.
+멋지다#0	멋지다	to be cool, great	네 모자 정말 멋지다!
+멋지다#1	멋지다	to be cool, great	멋진 배틀이었어요.
+알리다#0	알리다	to inform, tell	친구들에게 소식을 알렸어요.
+알리다#1	알리다	to inform, tell	이사 날짜를 알려 주세요.
+준비#0	준비	preparation	여행 준비를 다 했어요.
+준비#1	준비	preparation	친구야, 배틀 준비 다 됐어?
+나중#0	나중	later	나중에 다시 전화할게요.
+나중#1	나중	later	그건 나중에 얘기하자.
+들어오다#0	들어오다	to come in	추우니까 빨리 들어와요.
+들어오다#1	들어오다	to come in	방에 고양이가 들어왔어요.
+새롭다#0	새롭다	new	매일 새로운 것을 배워요.
+새롭다#1	새롭다	new	새로운 포켓몬을 만났어요.
+왼쪽#0	왼쪽	left side	은행은 왼쪽에 있어요.
+왼쪽#1	왼쪽	left side	왼쪽 길로 가면 공원이 나와요.
+점프#0	점프	jump	강아지가 높이 점프했어요.
+점프#1	점프	jump	점프해서 물웅덩이를 넘었어요.
+케이블#0	케이블	cable	케이블로 게임기를 연결해요.
+케이블#1	케이블	cable	케이블이 너무 짧아요.
+경험치#0	경험치	experience points (EXP)	배틀에서 이기면 경험치를 받아요.
+경험치#1	경험치	experience points (EXP)	경험치가 모이면 레벨이 올라요.
+꿈먹기#0	꿈먹기	Dream Eater (move)	꿈먹기는 자는 상대에게만 써요.
+꿈먹기#1	꿈먹기	Dream Eater (move)	꿈먹기라는 기술 이름이 재미있어요.
+내보내다#0	내보내다	to send out	고양이를 밖으로 내보냈어요.
+내보내다#1	내보내다	to send out	배틀에 꼬부기를 내보냈어요.
+대화#0	대화	conversation	친구와 오래 대화했어요.
+대화#1	대화	conversation	대화를 하면 마음이 편해요.
+등#0	등	lamp; back	등이 가려워서 못 자겠어요.
+등#1	등	lamp; back	방이 어두워서 등을 켰어요.
+마치#0	마치	as if	여기 경치가 마치 꿈 같아요.
+마치#1	마치	as if	그 아이는 마치 어른처럼 말해요.
+만약#0	만약	if	만약 비가 오면 집에 있을게요.
+만약#1	만약	if	만약 길을 잃으면 전화해.
+멀리#0	멀리	far away	구구가 멀리 날아갔어요.
+멀리#1	멀리	far away	집이 학교에서 멀리 있어요.
+바라다#0	바라다	to wish; hope	다들 건강하길 바라요.
+바라다#1	바라다	to wish; hope	좋은 날씨를 바라고 있어요.
+방식#0	방식	method, way	저는 이 방식이 편해요.
+방식#1	방식	method, way	공부 방식을 바꿔 봤어요.
+분#0	분	part, fraction; minute	십 분만 기다려 주세요.
+분#1	분	part, fraction; minute	피자를 사 분의 일만 먹었어요.
+뿌리#0	뿌리	root	이 나무는 뿌리가 깊어요.
+뿌리#1	뿌리	root	뿌리까지 물을 줘야 해요.
+서로#0	서로	each other	우리는 서로 많이 도와요.
+서로#1	서로	each other	포켓몬과 트레이너가 서로 믿어요.
+순서#0	순서	order	순서대로 줄을 서 주세요.
+순서#1	순서	order	배틀 순서를 정했어요.
+씨#0	씨	Mr./Ms. (after name)	민수 씨, 안녕하세요?
+씨#1	씨	Mr./Ms. (after name)	김 씨 아저씨가 가게에 계세요.
+억지로#0	억지로	by force	억지로 밥을 먹었어요.
+억지로#1	억지로	by force	싫으면 억지로 하지 마.
+연결#0	연결	connection	컴퓨터를 인터넷에 연결했어요.
+연결#1	연결	connection	이 길은 상록시티로 연결돼요.
+오래#0	오래	for a long time	친구를 오래 기다렸어요.
+오래#1	오래	for a long time	이 가게는 오래된 가게예요.
+이사#0	이사	moving (house)	다음 달에 이사를 가요.
+이사#1	이사	moving (house)	이사 준비 때문에 바빠요.
+조합#0	조합	combination	색 조합이 아주 예뻐요.
+조합#1	조합	combination	좋은 포켓몬 조합을 찾고 있어요.
+지난번#0	지난번	last time	지난번에 고마웠어요.
+지난번#1	지난번	last time	지난번보다 더 잘했어요.
+취미#0	취미	hobby	제 취미는 사진 찍기예요.
+취미#1	취미	hobby	쉬는 날 취미가 뭐예요?
+카드#0	카드	cards	친구랑 카드 놀이를 했어요.
+카드#1	카드	cards	카드를 섞어서 나눠 줘.
+편하다#0	편하다	to be comfortable	이 신발은 정말 편해요.
+편하다#1	편하다	to be comfortable	집에 오니까 마음이 편해요.
+환영#0	환영	welcome	우리 마을에 온 것을 환영해요.
+환영#1	환영	welcome	친구들이 저를 환영해 줬어요.
+흉내내기#0	흉내내기	Mimic	흉내내기는 상대 기술을 따라 하는 기술이에요.
+흉내내기#1	흉내내기	Mimic	동생은 고양이 흉내내기를 좋아해요.
+보답#0	보답	repayment, reward	도와준 친구에게 보답하고 싶어요.
+보답#1	보답	repayment, reward	보답으로 작은 선물을 줬어요.
+싫다#0	싫다	to dislike	저는 비 오는 날이 싫어요.
+싫다#1	싫다	to dislike	싫은 음식이 있어요?
+진화#0	진화	evolution	과학 시간에 생물의 진화를 배웠어요.
+진화#1	진화	evolution	휴대폰이 해마다 진화해요.
+금방#0	금방	soon, right away	편의점에 갔다가 금방 돌아올게요.
+금방#1	금방	soon, right away	라면이 금방 다 익었어요.
+출구#0	출구	exit	죄송한데 출구가 어디예요?
+출구#1	출구	exit	숲 출구에서 친구를 기다렸어요.
+가까이#0	가까이	near, close by	학교가 집에서 가까이 있어요.
+가까이#1	가까이	near, close by	가까이 와서 이것 좀 봐.
+노력#0	노력	effort	노력하면 할 수 있어요.
+노력#1	노력	effort	매일 노력해서 실력이 늘었어요.
+사탕#0	사탕	candy	아이에게 사탕을 하나 줬어요.
+사탕#1	사탕	candy	사탕을 많이 먹으면 이가 아파요.
+올라가다#0	올라가다	to go up	계단으로 이 층에 올라가요.
+올라가다#1	올라가다	to go up	언덕 위로 천천히 올라갔어요.
+편지#0	편지	letter	할머니께 편지를 썼어요.
+편지#1	편지	letter	친구한테서 편지가 왔어요.

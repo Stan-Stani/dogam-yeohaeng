@@ -1,0 +1,20 @@
+{
+  "관장#0": {"why": "2 wrong sense: museum/library director, not Gym Leader", "new": "관장을 이기려면 더 강해져야 해요."},
+  "기계#1": {"why": "1 unnatural: '빨래 기계' isn't said (세탁기)", "new": "집에 있는 기계가 갑자기 고장 났어요."},
+  "주마#1": {"why": "1 unnatural: indirect quote needs 고 (주마고 하셨어요)", "new": "할아버지가 맛있는 걸 사 주마고 하셨어요."},
+  "된다#1": {"why": "2 wrong sense: -도 된다 is permission, not 'becomes'", "new": "열심히 연습하면 좋은 트레이너가 된다."},
+  "이상#1": {"why": "1 unnatural: '레벨 오' reads oddly with a Sino number", "new": "이 대회는 열 살 이상만 참가할 수 있어요."},
+  "작성#1": {"why": "1 unnatural: 이름을 작성하다 is odd (이름은 적다/쓰다); 작성 takes documents", "new": "이 신청서를 작성해 주세요."},
+  "타운#0": {"why": "1 unnatural: 타운 isn't used standalone ('이 타운'); only in compounds", "new": "차이나타운에서 짜장면을 먹었어요."},
+  "타운#1": {"why": "1 unnatural: '타운 지도' isn't natural Korean", "new": "뉴타운에는 새 아파트가 많아요."},
+  "걸다#1": {"why": "2 wrong sense: 말을 걸다 (talk to) is neither 'pick a fight' nor 'hang'", "new": "벽에 시계를 걸었어요."},
+  "지금#1": {"why": "1 unnatural: mixes 반말 (기다려) with 해요체 (갈게요)", "new": "기다려, 지금 바로 갈게!"},
+  "호박#1": {"why": "1 inaccurate: amber is resin, not a stone; call it a gem", "new": "호박은 노랗고 반짝이는 보석이에요."},
+  "머신#1": {"why": "1 unnatural: '게임 머신' isn't said (게임기)", "new": "헬스장에 새 운동 머신이 들어왔어요."},
+  "포켓#1": {"why": "1 unnatural: bare 포켓 for a pocket isn't idiomatic (주머니)", "new": "포켓몬은 포켓 몬스터를 줄인 말이에요."},
+  "인원수#0": {"why": "1 unnatural: '배틀 인원수' is an odd phrase", "new": "오늘 모임 인원수는 다섯 명이에요."},
+  "월#1": {"why": "2 wrong sense: 월요일 is 'Monday' (moon), not 'month'", "new": "십이월에는 눈이 많이 와요."},
+  "맡다#1": {"why": "2 wrong sense: smelling, not 'take charge'", "new": "이번 청소는 제가 맡았어요."},
+  "내리다#1": {"why": "2 wrong sense: rain falling, not 'get off / drop off'", "new": "버스에서 내려서 조금 걸었어요."},
+  "니드#1": {"why": "4 spoiler: hints at the Nido- line (found past Pewter)", "new": "니드라는 말을 들으면 바늘이 생각나요."}
+}

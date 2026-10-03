@@ -1,0 +1,5 @@
+tests/shots/
+__pycache__/
+# derived from the game ROM text (Moneo) — local only, never committed
+tools/rom/
+src/data.json
