@@ -89,6 +89,7 @@ h2{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
 .hp i{display:block;height:100%;background:var(--grass);transition:width .4s}
 
 /* dex */
+.games{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:16px}.games span{font-size:.8rem;opacity:.7;width:100%}.games a{font-weight:700;font-size:.92rem;color:inherit;border:2px dashed currentColor;border-radius:8px;padding:5px 10px;text-decoration:none;opacity:.85}
 .tabs{display:flex;gap:6px;flex-wrap:wrap}
 .tp{display:flex;flex-direction:column;gap:2px;text-align:left;width:100%;font:inherit;color:var(--ink);cursor:pointer}
 .tph{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.tph b{font-family:var(--display);font-weight:400;font-size:1.25rem}
@@ -228,6 +229,7 @@ function viewMap(){
       <span class="info">${open?`<span class="t"><span class="ko">${a.ko}</span><span class="en">${a.en.toUpperCase()}</span></span>
         <span class="bar"><i class="m" style="width:${ws.length?m/ws.length*100:0}%"></i><i class="c" style="width:${ws.length?(c-m)/ws.length*100:0}%"></i></span>
         <span class="nums">길잡이 ${gc}/${g.length} · 잡은 단어 ${c}/${ws.length}</span>`:`<span class="t"><span class="ko">???</span></span><span class="nums">앞 마을의 길잡이 단어를 다 잡으면 열려요</span>`}</span></button>`}).join('')}</div>`;
+  $('view').insertAdjacentHTML('beforeend',`<div class="games"><span>다른 게임</span><a href="https://stan-stani.github.io/seongsilho/" target="_blank" rel="noopener">성실호</a><a href="https://stan-stani.github.io/hyeongje/" target="_blank" rel="noopener">형제</a><a href="https://stan-stani.github.io/daneo-maul/" target="_blank" rel="noopener">단어 마을</a><a href="https://stan-stani.github.io/banghu/" target="_blank" rel="noopener">방과 후</a></div>`);
   $('view').querySelectorAll('.stop:not([disabled])').forEach(b=>b.onclick=()=>{sceneLines=[];go('scene',+b.dataset.i)});
 }
 
