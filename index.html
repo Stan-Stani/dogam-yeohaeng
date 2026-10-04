@@ -106,6 +106,8 @@ h2{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
 .pips.known i{background:var(--known)}
 .gloss{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);left:50%;transform:translateX(-50%);width:min(480px,calc(100% - 32px));box-sizing:border-box;background:var(--ink);color:var(--bg);border-radius:12px;padding:10px 48px 10px 14px;z-index:20;line-height:1.5;display:flex;flex-direction:column;gap:3px}
 .gloss b{font-family:var(--display);font-weight:400;font-size:1.1rem;margin-right:6px}
+.gloss .gx{display:none;position:absolute;right:42px;top:8px;width:28px;height:28px;border-radius:50%;border:0;background:rgba(255,255,255,.2);color:inherit;font-size:1.1rem;line-height:1;cursor:pointer}
+.gloss.pinned .gx{display:block}.gloss.pinned{padding-right:82px}.gloss.pinned{outline:3px solid rgba(255,255,255,.3);outline-offset:-3px}
 .gloss .en{color:var(--known)}
 .gloss .q{position:absolute;right:10px;top:8px;border-color:var(--bg);color:var(--bg)}
 .toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:999px;font-family:var(--display);z-index:30;white-space:nowrap}
@@ -160,11 +162,13 @@ function lookup(eoj){
 }
 function popGloss(rows){
   const g=$('gloss');if(!rows.length){toast('사전에 없는 말이에요.');g.hidden=true;return}
-  g.innerHTML=rows.map(([h,d])=>`<div><b>${esc(h)}</b>${d.k?esc(d.k):'<span class="en">…</span>'}<span class="en" hidden> · ${esc(d.e)}</span></div>`).join('')+'<button class="q" aria-label="영어로 보기">?</button>';
-  g.hidden=false;g.querySelector('.q').onclick=e=>{e.stopPropagation();g.querySelectorAll('.en[hidden],.en.shown').forEach(x=>{x.hidden=!x.hidden;x.classList.add('shown')})};
+  g.innerHTML=rows.map(([h,d])=>`<div><b>${esc(h)}</b>${d.k?esc(d.k):'<span class="en">…</span>'}<span class="en" hidden> · ${esc(d.e)}</span></div>`).join('')+'<button class="q" aria-label="영어로 보기">?</button><button class="gx" type="button" aria-label="닫기">×</button>';
+  g.classList.remove('pinned');g.hidden=false;g.querySelector('.q').onclick=e=>{e.stopPropagation();g.querySelectorAll('.en[hidden],.en.shown').forEach(x=>{x.hidden=!x.hidden;x.classList.add('shown')})};
   clearTimeout(popGloss.t);popGloss.t=setTimeout(()=>g.hidden=true,7000);
 }
-$('gloss').onclick=e=>{if(!e.target.closest('.q'))$('gloss').hidden=true};
+$('gloss').onclick=e=>{ // tap the definition to keep it (× closes)
+  if(e.target.closest('.gx')){$('gloss').hidden=true;return}if(e.target.closest('.q'))return;
+  clearTimeout(popGloss.t);$('gloss').classList.add('pinned')};
 let toastT;function toast(t){const el=$('toast');el.textContent=t;el.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>el.hidden=true,2200)}
 
 /* words in a line → spans: up to GLOW uncaught deck words glow (길잡이 first, then the most frequent),
