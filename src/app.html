@@ -90,6 +90,9 @@ h2{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
 
 /* dex */
 .tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tp{display:flex;flex-direction:column;gap:2px;text-align:left;width:100%;font:inherit;color:var(--ink);cursor:pointer}
+.tph{display:flex;justify-content:space-between;align-items:baseline;gap:8px}.tph b{font-family:var(--display);font-weight:400;font-size:1.25rem}
+.tpm{font-family:var(--mono);font-size:.75rem;color:var(--muted);white-space:nowrap}.tpk{font-size:1rem;line-height:1.5}.tpe{font-size:.9rem;color:var(--muted)}
 .tab{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:6px 12px;font-family:var(--display);cursor:pointer}
 .tab[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:8px}
@@ -117,6 +120,7 @@ h2{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
   <button data-v="map" aria-current="page">지도</button>
   <button data-v="wild">풀숲<span class="n" id="dueN"></span></button>
   <button data-v="dex">도감</button>
+  <button data-v="taps">사전</button>
 </nav>
 <div class="gloss" id="gloss" hidden></div>
 <div class="toast" id="toast" hidden></div>
@@ -179,7 +183,7 @@ function lineHTML(t,opts={}){
 document.addEventListener('click',e=>{
   const s=e.target.closest('.w');if(!s||s.closest('.noTap'))return;
   if(s.classList.contains('new')&&s.dataset.w){openCatch(s.dataset.w,s.closest('.line')?.dataset.li);return}
-  popGloss(lookup(s.dataset.e));
+  const rows=lookup(s.dataset.e);noteTap(rows);popGloss(rows);
 });
 
 /* ---------- speech ---------- */
@@ -208,7 +212,7 @@ function header(){
 }
 function go(v,ai){view=v;if(ai!=null)area=ai;document.querySelectorAll('nav button').forEach(b=>b.setAttribute('aria-current',b.dataset.v===v||(v==='scene'&&b.dataset.v==='map')?'page':'false'));render()}
 document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>go(b.dataset.v));
-function render(){header();({map:viewMap,scene:viewScene,wild:viewWild,dex:viewDex})[view]();window.scrollTo(0,0)}
+function render(){header();({map:viewMap,scene:viewScene,wild:viewWild,dex:viewDex,taps:viewTaps})[view]();window.scrollTo(0,0)}
 
 function viewMap(){
   const r=reached();
@@ -338,6 +342,19 @@ function review(queue){
 }
 
 /* dex */
+/* 찾아본 말: every dictionary tap — how many times, and when last */
+let taps={},tapSort='t';try{taps=JSON.parse(localStorage.getItem('dogam-taps')||'{}')||{}}catch(e){taps={}}
+function noteTap(rows){const [h,d]=rows[0]||[];if(!h)return;const r=taps[h]||(taps[h]={n:0,t:0});r.n++;r.t=Date.now();r.k=d.k;r.e=d.e;try{localStorage.setItem('dogam-taps',JSON.stringify(taps))}catch(e){}}
+function ago(t){const m=Math.floor((Date.now()-t)/60000);if(m<1)return '방금';if(m<60)return m+'분 전';const h=Math.floor(m/60);if(h<24)return h+'시간 전';const d=Math.floor(h/24);return d===1?'어제':d+'일 전'}
+function viewTaps(){
+  const rows=Object.entries(taps).sort((a,b)=>tapSort==='n'?(b[1].n-a[1].n||b[1].t-a[1].t):b[1].t-a[1].t);
+  $('view').innerHTML=`<div class="scene"><div><h2>찾아본 말</h2><p class="sub">${rows.length?`${rows.length}개`:''}</p></div>
+    <div class="tabs"><button class="tab" data-s="t" aria-pressed="${tapSort==='t'}">최근</button><button class="tab" data-s="n" aria-pressed="${tapSort==='n'}">많이</button></div>
+    ${rows.length?rows.map(([h,r])=>`<button class="line tp"><span class="tph"><b>${esc(h)}</b><span class="tpm">${r.n}번 · ${ago(r.t)}</span></span><span class="tpk">${r.k?esc(r.k):''}</span><span class="tpe" hidden>${esc(r.e||'')}</span></button>`).join('')
+      :'<p class="empty">아직 찾아본 말이 없어요.</p>'}</div>`;
+  $('view').querySelectorAll('.tab[data-s]').forEach(b=>b.onclick=()=>{tapSort=b.dataset.s;render()});
+  $('view').querySelectorAll('.tp').forEach(b=>b.onclick=()=>{const en=b.querySelector('.tpe');en.hidden=!en.hidden});
+}
 let dexTab='word';
 function viewDex(){
   const r=reached(),tabs=[['word','말'],['tech','기술·도구'],['mon','포켓몬'],['root','뿌리']];

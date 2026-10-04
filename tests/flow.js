@@ -18,6 +18,9 @@ window.__play=async function(){
   check(caught(word)&&S.newToday===1,'caught '+word+', today 1/20');
   // tap an ordinary word for the dictionary
   const plain=document.querySelector('.line .w:not(.new)');if(plain){plain.click();await wait(150);check(!$('gloss').hidden||!$('toast').hidden,'tapping a plain word opens the dictionary: '+plain.textContent);await shot('05-gloss');$('gloss').hidden=true}
+  // 찾아본 말: the plain word just tapped is listed with a count; tapping it shows the English
+  go('taps');await wait(150);const tp=document.querySelectorAll('.tp');check(tp.length>=1,'사전 lists '+tp.length+' looked-up word(s): '+(tp[0]?.querySelector('.tph')?.textContent||''));
+  if(tp[0]){tp[0].click();await wait(60);check(!tp[0].querySelector('.tpe').hidden,'tapping it shows the English')}await shot('05b-taps');
   // review: make it due
   S.caught[word].due=Date.now()-1;save();go('wild');await wait(150);check(!!$('start'),'wild encounter waiting');await shot('06-wild');
   $('start').click();await wait(300);await shot('07-review');
