@@ -348,6 +348,20 @@ function review(queue){
 }
 
 /* dex */
+/* 복사: every looked-up word as plain text (word | times | last day | meaning | English), to paste into a chat and practise */
+function tapsText(){
+  const d=t=>{const x=new Date(t);return x.getFullYear()+'-'+String(x.getMonth()+1).padStart(2,'0')+'-'+String(x.getDate()).padStart(2,'0')};
+  const rows=Object.entries(taps).sort((a,b)=>tapSort==='n'?(b[1].n-a[1].n||b[1].t-a[1].t):b[1].t-a[1].t);
+  return `도감 여행 · 찾아본 말 ${rows.length}개 (${d(Date.now())})\n단어 | 찾은 횟수 | 마지막으로 찾은 날 | 뜻 | English\n`
+    +rows.map(([h,r])=>[h,r.n,d(r.t),r.k||'',r.e||''].map(x=>String(x).replace(/\s*\|\s*/g,' / ')).join(' | ')).join('\n')+'\n';
+}
+function copyTaps(before){
+  const txt=tapsText();
+  const show=()=>{  // no clipboard (some embeds block it): show the text selected, ready for the phone's own copy
+    let ta=document.getElementById('tapText');if(!ta){ta=document.createElement('textarea');ta.id='tapText';ta.readOnly=true;ta.style.cssText='width:100%;height:9em;font-size:.8rem;margin:6px 0;box-sizing:border-box';before.before(ta)}
+    ta.hidden=false;ta.value=txt;ta.focus();ta.select();let ok=false;try{ok=document.execCommand('copy')}catch(e){}if(ok)toast('복사했어요!')};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(()=>toast('복사했어요!'),show);else show();
+}
 /* 찾아본 말: every dictionary tap — how many times, and when last */
 let taps={},tapSort='t';try{taps=JSON.parse(localStorage.getItem('dogam-taps')||'{}')||{}}catch(e){taps={}}
 function noteTap(rows){const [h,d]=rows[0]||[];if(!h)return;const r=taps[h]||(taps[h]={n:0,t:0});r.n++;r.t=Date.now();r.k=d.k;r.e=d.e;try{localStorage.setItem('dogam-taps',JSON.stringify(taps))}catch(e){}}
@@ -355,10 +369,11 @@ function ago(t){const m=Math.floor((Date.now()-t)/60000);if(m<1)return '방금';
 function viewTaps(){
   const rows=Object.entries(taps).sort((a,b)=>tapSort==='n'?(b[1].n-a[1].n||b[1].t-a[1].t):b[1].t-a[1].t);
   $('view').innerHTML=`<div class="scene"><div><h2>찾아본 말</h2><p class="sub">${rows.length?`${rows.length}개`:''}</p></div>
-    <div class="tabs"><button class="tab" data-s="t" aria-pressed="${tapSort==='t'}">최근</button><button class="tab" data-s="n" aria-pressed="${tapSort==='n'}">많이</button></div>
+    <div class="tabs"><button class="tab" data-s="t" aria-pressed="${tapSort==='t'}">최근</button><button class="tab" data-s="n" aria-pressed="${tapSort==='n'}">많이</button>${rows.length?'<button class="tab" id="tapCopy" style="margin-left:auto">복사</button>':''}</div>
     ${rows.length?rows.map(([h,r])=>`<button class="line tp"><span class="tph"><b>${esc(h)}</b><span class="tpm">${r.n}번 · ${ago(r.t)}</span></span><span class="tpk">${r.k?esc(r.k):''}</span><span class="tpe" hidden>${esc(r.e||'')}</span></button>`).join('')
       :'<p class="empty">아직 찾아본 말이 없어요.</p>'}</div>`;
   $('view').querySelectorAll('.tab[data-s]').forEach(b=>b.onclick=()=>{tapSort=b.dataset.s;render()});
+  if($('tapCopy'))$('tapCopy').onclick=()=>copyTaps($('view').querySelector('.tp')||$('tapCopy'));
   $('view').querySelectorAll('.tp').forEach(b=>b.onclick=()=>{const en=b.querySelector('.tpe');en.hidden=!en.hidden});
 }
 let dexTab='word';
