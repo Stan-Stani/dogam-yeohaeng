@@ -20,7 +20,7 @@ const driver=fs.readFileSync(path.join(root,'tests/'+(process.argv[3]||'tapcheck
 const walk='';
 fs.writeFileSync(path.join(tmp,'play.html'),html.replace('</body></html>',`<script>${driver}\ntry{localStorage.clear()}catch(e){}\nsetTimeout(()=>__play(),900);</script>\n</body></html>`));
 const port=9300+Math.floor(Math.random()*500);
-const chrome=spawn('flatpak',['run',`--filesystem=${tmp}`,'com.google.Chrome','--headless=new','--disable-gpu','--hide-scrollbars',`--remote-debugging-port=${port}`,
+const chrome=spawn('flatpak',['run',`--filesystem=${tmp}`,'com.google.Chrome','--headless=new','--mute-audio','--disable-gpu','--hide-scrollbars',`--remote-debugging-port=${port}`,
  '--window-size=420,860',`--user-data-dir=${tmp}/prof`,'--autoplay-policy=no-user-gesture-required',`file://${tmp}/play.html`],{stdio:'ignore'});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 let ws;for(let i=0;i<60&&!ws;i++){try{const l=await (await fetch(`http://127.0.0.1:${port}/json/list`)).json();const pg=l.find(t=>t.type==='page');if(pg)ws=pg.webSocketDebuggerUrl}catch(e){}if(!ws)await sleep(500)}
